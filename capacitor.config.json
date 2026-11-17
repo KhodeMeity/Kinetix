@@ -1,0 +1,34 @@
+{
+  "appId": "com.kinetix.app",
+  "appName": "Kinetix",
+  "webDir": "www",
+  "backgroundColor": "#090b0e",
+  "android": {
+    "backgroundColor": "#090b0e",
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0,
+      "launchAutoHide": false,
+      "backgroundColor": "#090b0e",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "splashFullScreen": true,
+      "splashImmersive": true
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#090b0e",
+      "overlaysWebView": true
+    },
+    "SystemBars": {
+      "style": "DARK"
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_kinetix",
+      "iconColor": "#c9f53b"
+    }
+  }
+}

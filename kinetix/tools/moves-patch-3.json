@@ -1,0 +1,3347 @@
+[
+ {
+  "id": 3,
+  "desc": [
+   "اجرای شنا با مکث‌های ایزومتریک در سه نقطه مختلف مسیر (بالا، میانه و پایین) برای افزایش زمان تحت تنش و قدرت در نقاط ضعف.",
+   "Performing push-ups with isometric pauses at three points (top, mid, bottom) to maximize time under tension and overcome sticking points."
+  ],
+  "muscles": [
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "سرشانه قدامی",
+    "Anterior Deltoids"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "شکم",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 6,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "در حالت شنا قرار بگیر و بدن را تا نیمه راه (زاویه ۹۰ درجه آرنج) پایین بیاور و ۲ ثانیه مکث کن.",
+    "Start in a push-up position, lower halfway down (90-degree elbow angle), and pause for 2 seconds."
+   ],
+   [
+    "به پایین‌ترین نقطه (نزدیک زمین) برو و دوباره ۲ ثانیه کامل مکث کن.",
+    "Lower to the bottom position just above the floor and pause for another 2 seconds."
+   ],
+   [
+    "هنگام بالا آمدن دوباره در نیمه مسیر ۲ ثانیه مکث کن و سپس به بالا برگرد.",
+    "On the way up, pause again halfway for 2 seconds before locking out at the top."
+   ]
+  ],
+  "tips": [
+   [
+    "در تمام طول مکث‌ها عضلات سینه، شکم و باسن را کاملاً منقبض نگه دار.",
+    "Keep chest, core, and glutes actively braced during every pause."
+   ],
+   [
+    "نفس خود را حبس نکن و در طول مکث‌ها آرام نفس بکش.",
+    "Do not hold your breath; breathe steadily through the isometric holds."
+   ]
+  ],
+  "mistakes": [
+   [
+    "شل کردن بدن یا تکیه دادن سینه به زمین در مکث پایینی",
+    "Resting the chest on the floor during the bottom pause"
+   ],
+   [
+    "شمردن خیلی سریع مکث‌ها",
+    "Rushing through the 2-second counts"
+   ]
+  ]
+ },
+ {
+  "id": 6,
+  "desc": [
+   "شنا با فاصله کم بین دست‌ها (کمتر از عرض شانه) برای انتقال تمرکز از سینه به عضلات پشت بازو.",
+   "Push-ups with hands placed narrower than shoulder-width to shift emphasis from the chest onto the triceps."
+  ],
+  "muscles": [
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "سینه (بخش داخلی)",
+    "Inner Chest"
+   ],
+   [
+    "سرشانه قدامی",
+    "Anterior Deltoids"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 10,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "دست‌ها را زیر سینه طوری قرار بده که فاصله دو دست حدود ۱۰ تا ۱۵ سانتی‌متر باشد.",
+    "Place hands under your chest about 4 to 6 inches apart."
+   ],
+   [
+    "آرنج‌ها را نزدیک به پهلوها خم کن و سینه را تا نزدیک دست‌ها پایین بیاور.",
+    "Bend your elbows close to your ribs and lower your chest toward your hands."
+   ],
+   [
+    "با فشار کف دست‌ها به زمین و انقباض پشت بازو به بالا برگرد.",
+    "Press through your palms and squeeze your triceps to return to the top."
+   ]
+  ],
+  "tips": [
+   [
+    "اگر در شنای الماسی مچ دستت درد می‌گیرد، این حرکت بهترین جایگزین بدون فشار به مچ است.",
+    "If diamond push-ups hurt your wrists, this is the best wrist-friendly alternative."
+   ]
+  ],
+  "mistakes": [
+   [
+    "باز کردن آرنج‌ها به طرفین هنگام پایین رفتن",
+    "Flaring elbows outward instead of keeping them tucked"
+   ]
+  ]
+ },
+ {
+  "id": 10,
+  "desc": [
+   "یکی از مهم‌ترین حرکات پایه در ژیمناستیک و کلیستنیکس برای ساخت قدرت سرشانه و آمادگی برای حرکت پلانچ.",
+   "A fundamental gymnastics/calisthenics exercise to build extreme front-delt strength and prepare for the planche."
+  ],
+  "muscles": [
+   [
+    "سرشانه قدامی",
+    "Anterior Deltoids"
+   ],
+   [
+    "بالاسینه",
+    "Upper Chest"
+   ],
+   [
+    "دوسر بازویی (جلوبازو)",
+    "Biceps"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 7,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "دست‌ها را در راستای کمر (پهلوی شکم) روی زمین بگذار و انگشتان را به سمت بیرون یا عقب بچرخان.",
+    "Place hands on the floor beside your waist/lower ribs with fingers turned outward or backward."
+   ],
+   [
+    "شانه‌ها را تا حد امکان به جلو متمایل کن (جلوتر از مچ دست) و آرنج‌ها را قفل نگه دار.",
+    "Lean your shoulders as far forward past your wrists as possible while keeping core tight."
+   ],
+   [
+    "با حفظ این زاویه رو به جلو، آرنج‌ها را خم کن، سینه را پایین بیاور و دوباره به بالا هل بده.",
+    "Maintaining this forward lean, bend your elbows to lower your chest, then press back up."
+   ]
+  ],
+  "tips": [
+   [
+    "هرچه شانه‌ها را بیشتر به جلو متمایل کنی، حرکت سخت‌تر و به پلانچ نزدیک‌تر می‌شود.",
+    "The further forward you lean your shoulders, the harder the exercise becomes."
+   ],
+   [
+    "کتف‌ها را در بالای حرکت به جلو هل بده (پروترکشن).",
+    "Actively protract your shoulder blades at the top of every rep."
+   ]
+  ],
+  "mistakes": [
+   [
+    "عقب بردن بدن هنگام بالا آمدن برای فرار از فشار روی سرشانه",
+    "Leaning backward when pushing up to cheat the shoulder load"
+   ],
+   [
+    "چرخاندن انگشتان به سمت جلو که فشار خطرناکی به مچ وارد می‌کند",
+    "Pointing fingers straight forward, causing excessive wrist strain"
+   ]
+  ]
+ },
+ {
+  "id": 11,
+  "desc": [
+   "هل دادن بدن با حداکثر سرعت به طوری که دست‌ها از زمین جدا شوند؛ برای ساخت توان انفجاری بالاتنه.",
+   "Pushing off the floor with maximum speed so the hands leave the ground; builds upper-body explosive power."
+  ],
+  "muscles": [
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "پشت‌بازو (تارهای عضلانی تند انقباض)",
+    "Triceps (Fast-twitch fibers)"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 8,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "در حالت شنای استاندارد قرار بگیر و با کنترل سینه را به زمین نزدیک کن.",
+    "Start in a standard push-up stance and lower your chest under control."
+   ],
+   [
+    "به محض رسیدن به پایین، با تمام توان دست‌ها را به زمین فشار بده تا دست‌ها در هوا بلند شوند.",
+    "At the bottom, explode upward forcefully so your palms leave the floor."
+   ],
+   [
+    "با آرنج‌های کمی خم و نرم روی زمین فرود بیا و بلافاصله تکرار بعدی را شروع کن.",
+    "Land softly with slightly bent elbows to absorb the impact and repeat."
+   ]
+  ],
+  "tips": [
+   [
+    "شکم را سفت نگه دار تا هنگام پرش، کمر موج برندارد و پاها به زمین نخورند.",
+    "Keep your core rigid so your hips don't sag during the airborne phase."
+   ]
+  ],
+  "mistakes": [
+   [
+    "فرود آمدن با آرنج‌های قفل و خشک که به مفاصل آسیب می‌زند",
+    "Landing with stiff, locked-out elbows"
+   ]
+  ]
+ },
+ {
+  "id": 13,
+  "desc": [
+   "نمایش نهایی قدرت هل دادن یک‌طرفه و ثبات ضدچرخش هسته مرکزی بدن.",
+   "The ultimate display of unilateral pushing strength and anti-rotation core stability."
+  ],
+  "muscles": [
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "مورب شکمی",
+    "Obliques"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 4,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "پاها را بسیار بازتر از عرض شانه بگذار (برای تعادل)، یک دست را زیر مرکز سینه روی زمین بگذار و دست دیگر را پشت کمر ببر.",
+    "Set your feet wide apart for stability, place one hand under your chest center, and put the other behind your back."
+   ],
+   [
+    "شکم و باسن را به شدت منقبض کن تا بدن نچرخد.",
+    "Brace your core and glutes hard to prevent your torso from twisting."
+   ],
+   [
+    "آرنج دست تکیه‌گاه را خم کن، سینه را پایین بیاور و با قدرت بالا برگرد.",
+    "Bend the working elbow to lower your chest, then press forcefully back up."
+   ]
+  ],
+  "tips": [
+   [
+    "هرچه پاها را بیشتر باز کنی تعادل ساده‌تر می‌شود؛ با پیشرفت، پاها را به هم نزدیک‌تر کن.",
+    "A wider foot stance increases balance; bring feet closer together as you get stronger."
+   ]
+  ],
+  "mistakes": [
+   [
+    "چرخاندن شدید شانه‌ها و لگن به یک سمت برای جبران کمبود قدرت",
+    "Twisting the torso and hips excessively to compensate for lack of strength"
+   ]
+  ]
+ },
+ {
+  "id": 16,
+  "desc": [
+   "اجرای دیپ روی یک میله تک که پشت بدن قرار دارد؛ چالشی شدید برای انعطاف شانه، سینه و پشت بازو.",
+   "Performing dips on a single straight bar positioned behind your back; demands extreme shoulder mobility and pushing strength."
+  ],
+  "muscles": [
+   [
+    "سرشانه قدامی",
+    "Anterior Deltoids"
+   ],
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "عضلات تثبیت‌کننده کتف",
+    "Scapular Stabilizers"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 6,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "پشت به یک میله بارفیکس کوتاه بایست و میله را با دست‌های صاف پشت باسن بگیر (کف دست رو به عقب یا جلو).",
+    "Stand with your back to a low bar and grip it behind your hips with straight arms."
+   ],
+   [
+    "پاها را از زمین جدا کن (بدن کمی به جلو متمایل می‌شود) و آرنج‌ها را به عقب خم کن.",
+    "Lift your feet off the ground (allowing a natural forward lean) and bend your elbows backward."
+   ],
+   [
+    "تا زاویه ۹۰ درجه پایین برو و با قدرت دست‌ها به بالا برگرد.",
+    "Lower until elbows reach 90 degrees, then press firmly back to the top."
+   ]
+  ],
+  "tips": [
+   [
+    "قبل از اجرای این حرکت، حتماً انعطاف‌پذیری اکستنشن شانه (کشش دست از پشت) را تمرین کن.",
+    "Ensure adequate shoulder extension mobility before attempting this exercise."
+   ]
+  ],
+  "mistakes": [
+   [
+    "تاب دادن شدید پاها برای بالا کشیدن بدن",
+    "Swinging the legs aggressively for momentum"
+   ],
+   [
+    "پایین رفتن بیش از حد بدون انعطاف کافی شانه",
+    "Dipping too deep without sufficient shoulder flexibility"
+   ]
+  ]
+ },
+ {
+  "id": 17,
+  "desc": [
+   "پرس کردن کل وزن بدن در حالت بالانس با تکیه به دیوار؛ بهترین حرکت برای ساخت سرشانه‌های گرد و قدرتمند.",
+   "Pressing your entire bodyweight vertically against a wall; the ultimate builder for massive, strong shoulders."
+  ],
+  "muscles": [
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "ذوزنقه‌ای",
+    "Trapezius"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 6,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "در حالت بالانس با تکیه پاشنه‌ها به دیوار قرار بگیر (دست‌ها به اندازه عرض شانه).",
+    "Kick up into a handstand with your heels resting lightly against a wall, hands shoulder-width apart."
+   ],
+   [
+    "آرنج‌ها را خم کن و به آرامی سر را به سمت زمین (روی یک تشک نرم) پایین بیاور.",
+    "Bend your elbows and lower your head slowly toward a padded mat on the floor."
+   ],
+   [
+    "با فشار کف دست‌ها و انقباض سرشانه بدن را به بالا هل بده تا دست‌ها صاف شوند.",
+    "Press forcefully through your palms and shoulders until your arms lock out at the top."
+   ]
+  ],
+  "tips": [
+   [
+    "سر باید کمی جلوتر از خط دست‌ها زمین را لمس کند (شکل مثلث)، نه دقیقاً بین دو دست.",
+    "Your head should touch slightly in front of your hands (forming a tripod), not directly between them."
+   ]
+  ],
+  "mistakes": [
+   [
+    "ضربه زدن سر به زمین هنگام پایین آمدن",
+    "Dropping fast and bumping your head on the floor"
+   ],
+   [
+    "قوس دادن زیاد به کمر",
+    "Arching the lower back excessively"
+   ]
+  ]
+ },
+ {
+  "id": 18,
+  "desc": [
+   "یکی از تحسین‌برانگیزترین حرکات کلیستنیکس؛ اجرای پرس عمودی در بالانس کامل بدون هیچ تکیه‌گاهی.",
+   "One of the most impressive calisthenics feats; performing vertical presses in a freestanding handstand with zero support."
+  ],
+  "muscles": [
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "ذوزنقه‌ای",
+    "Trapezius"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ],
+   [
+    "ساعد و انگشتان",
+    "Forearms & Fingers"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 4,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "در حالت بالانس آزاد کامل و بدون تکان بایست.",
+    "Establish a solid, still freestanding handstand."
+   ],
+   [
+    "با کنترل تعادل روی انگشتان دست، آرنج‌ها را خم کن و سر را به جلو و پایین هدایت کن (لگن کمی عقب می‌رود برای حفظ مرکز ثقل).",
+    "Controlling balance through your fingertips, bend your elbows and bring your head forward/down (hips counter-shift slightly)."
+   ],
+   [
+    "با فشار هماهنگ سرشانه و کنترل مچ، بدن را به حالت بالانس عمودی برگردان.",
+    "Press back up smoothly into a straight vertical handstand line."
+   ]
+  ],
+  "tips": [
+   [
+    "تسلط کامل بر بالانس آزاد (حداقل ۳۰ ثانیه) و هندپوش‌آپ با دیوار پیش‌نیاز اجباری این حرکت است.",
+    "A solid 30-second freestanding handstand and strict wall HSPUs are mandatory prerequisites."
+   ]
+  ],
+  "mistakes": [
+   [
+    "عمودی پایین آوردن سر بدون جلو بردن شانه‌ها که باعث برهم خوردن مرکز ثقل و افتادن می‌شود",
+    "Lowering straight down without shifting shoulders forward, causing you to fall over"
+   ]
+  ]
+ },
+ {
+  "id": 19,
+  "desc": [
+   "حرکتی روان و موج‌دار که سرشانه، سینه و پشت بازو را تقویت کرده و انعطاف ستون فقرات را افزایش می‌دهد.",
+   "A fluid, wave-like push-up that strengthens shoulders, chest, and triceps while improving spinal mobility."
+  ],
+  "muscles": [
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "فیله کمر",
+    "Lower Back"
+   ],
+   [
+    "همسترینگ",
+    "Hamstrings"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 9,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "در حالت V برعکس (باسن بالا) قرار بگیر.",
+    "Start in a downward-facing dog (inverted V) position with hips high."
+   ],
+   [
+    "آرنج‌ها را خم کن و سر و سینه را با یک قوس نزدیک به زمین به جلو سر بده تا سینه بالا بیاید و لگن به زمین نزدیک شود (حالت کبرا).",
+    "Bend your elbows and swoop your head and chest close to the floor into an upward cobra position."
+   ],
+   [
+    "دقیقاً از همان مسیر با خم کردن آرنج‌ها به عقب برگرد و باسن را بالا ببر.",
+    "Reverse the exact path by bending your elbows and pushing your hips back up to the start."
+   ]
+  ],
+  "tips": [
+   [
+    "حرکت باید نرم و پیوسته باشد؛ تصور کن از زیر یک میله ارتفاع کوتاه رد می‌شوی و برمی‌گردی.",
+    "Keep the motion fluid; imagine ducking under a low hurdle and reversing back under it."
+   ]
+  ],
+  "mistakes": [
+   [
+    "به جای برگشتن از مسیر پایین، مستقیم باسن را بالا بردن (که تبدیل به شنای هندو می‌شود)",
+    "Simply pushing hips straight up on the return instead of reversing the swoop (which turns it into a Hindu push-up)"
+   ]
+  ]
+ },
+ {
+  "id": 20,
+  "desc": [
+   "در حالی که به پشت دراز کشیده‌اید، با فشار آرنج‌ها به زمین قفسه سینه را بلند می‌کنید؛ عالی برای پشت سرشانه و ذوزنقه‌ای.",
+   "Lying on your back, pressing your elbows into the floor to lift your upper torso; great for rear delts and traps."
+  ],
+  "muscles": [
+   [
+    "دلتوئید خلفی (پشت سرشانه)",
+    "Posterior Deltoids"
+   ],
+   [
+    "ذوزنقه‌ای",
+    "Trapezius"
+   ],
+   [
+    "متوازی‌الاضلاع (رومبوید)",
+    "Rhomboids"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 12,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "به پشت دراز بکش، زانوها را خم کن و آرنج‌ها را با زاویه ۹۰ درجه کنار بدن روی زمین فشار بده.",
+    "Lie on your back with knees bent and elbows bent at 90 degrees pressed into the floor beside your torso."
+   ],
+   [
+    "با فشار آرنج‌ها به زمین و نزدیک کردن کتف‌ها به هم، قفسه سینه و کمر را از زمین بلند کن.",
+    "Drive your elbows into the ground and pinch your shoulder blades together to lift your upper back off the floor."
+   ],
+   [
+    "۱ ثانیه در بالا مکث کن و به آرامی به زمین برگرد.",
+    "Hold for 1 second at the top, then lower back down slowly."
+   ]
+  ],
+  "tips": [
+   [
+    "سر را به زمین فشار نده؛ تمام نیرو باید از آرنج‌ها و عضلات پشت شانه بیاید.",
+    "Do not push with the back of your head; generate all force through your elbows and upper back."
+   ]
+  ],
+  "mistakes": [
+   [
+    "بلند کردن لگن به جای بلند کردن قفسه سینه",
+    "Lifting the hips (like a glute bridge) instead of lifting the upper torso"
+   ]
+  ]
+ },
+ {
+  "id": 24,
+  "desc": [
+   "اجرای بارفیکس روی دستگیره‌های موازی (کف دست‌ها رو به هم)؛ راحت‌ترین زاویه برای مفاصل شانه، آرنج و مچ.",
+   "Performing pull-ups on parallel handles (palms facing each other); the most joint-friendly grip for shoulders and wrists."
+  ],
+  "muscles": [
+   [
+    "زیربغل (لت)",
+    "Lats"
+   ],
+   [
+    "عضله بازویی (براکیالیس)",
+    "Brachialis"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 8,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "دستگیره‌های موازی میله بارفیکس را طوری بگیر که کف دست‌ها رو به هم باشند.",
+    "Grip the parallel pull-up handles with palms facing each other."
+   ],
+   [
+    "کتف‌ها را به پایین بکش و بدن را بالا بیاور تا چانه از دستگیره‌ها عبور کند.",
+    "Depress your shoulder blades and pull yourself up until your chin clears the handles."
+   ],
+   [
+    "با کنترل کامل پایین بیا تا آرنج‌ها کاملاً صاف شوند.",
+    "Lower back down with control to full elbow extension."
+   ]
+  ],
+  "tips": [
+   [
+    "سینه را به سمت بالا بده و آرنج‌ها را مستقیماً به سمت زمین بکش.",
+    "Keep your chest lifted and drive your elbows straight down toward the floor."
+   ]
+  ],
+  "mistakes": [
+   [
+    "تاب دادن پاها و نصفه پایین رفتن",
+    "Swinging the legs or cutting the bottom extension short"
+   ]
+  ]
+ },
+ {
+  "id": 27,
+  "desc": [
+   "اجرای بارفیکس در حالی که پاها صاف و عمود بر بدن (زاویه ۹۰ درجه) نگه داشته شده‌اند؛ اوج درگیری زیربغل و شکم.",
+   "Performing pull-ups while holding legs straight out at a 90-degree angle; intense combination of lats and core."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "زیرشکم",
+    "Lower Abs"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ],
+   [
+    "خم‌کننده ران",
+    "Hip Flexors"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 6,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "از میله آویزان شو و پاهای صاف و جفت را بالا بیاور تا موازی زمین شوند (شکل L).",
+    "Hang from the bar and lift your straight, together legs until they are parallel to the floor (L-shape)."
+   ],
+   [
+    "بدون اینکه پاها پایین بیفتند، یک بارفیکس کامل بزن تا چانه بالای میله برود.",
+    "Maintaining the L-sit, pull yourself up until your chin clears the bar."
+   ],
+   [
+    "با حفظ زاویه ۹۰ درجه پاها، به آرامی به حالت آویزان برگرد.",
+    "Lower down slowly while keeping your legs locked at 90 degrees."
+   ]
+  ],
+  "tips": [
+   [
+    "این حرکت به طور خودکار جلوی تاب خوردن بدن را می‌گیرد و فرم بارفیکس را فوق‌العاده تمیز می‌کند.",
+    "Holding the L-sit naturally prevents swinging and enforces strict pulling mechanics."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن زانوها یا پایین انداختن پاها در بخش سخت کشش",
+    "Bending the knees or dropping the legs during the hardest part of the pull"
+   ]
+  ]
+ },
+ {
+  "id": 28,
+  "desc": [
+   "کشیدن بدن به سمت یک دست در حالی که دست دیگر صاف است؛ بهترین تمرین برای رسیدن به بارفیکس یک‌دست.",
+   "Pulling your body toward one hand while keeping the other arm straight; the premier progression for one-arm pull-ups."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ],
+   [
+    "مورب شکمی",
+    "Obliques"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 5,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "میله را بسیار بازتر از عرض شانه بگیر.",
+    "Grab the pull-up bar with a very wide grip."
+   ],
+   [
+    "با خم کردن دست راست، بدن را به سمت دست راست بالا بکش در حالی که دست چپ روی میله صاف می‌ماند.",
+    "Pull your chest toward your right hand while keeping your left arm straight on the bar."
+   ],
+   [
+    "به مرکز و پایین برگرد و همین کار را به سمت دست چپ انجام بده.",
+    "Lower back to the center dead hang and repeat toward your left hand."
+   ]
+  ],
+  "tips": [
+   [
+    "دست کمکی باید کاملاً صاف بماند تا بار اصلی روی دست درگیر بیفتد.",
+    "Keep the assisting arm completely straight so the working arm bears the majority of the load."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن همزمان هر دو آرنج مثل بارفیکس دست باز معمولی",
+    "Bending both elbows simultaneously like a regular wide-grip pull-up"
+   ]
+  ]
+ },
+ {
+  "id": 29,
+  "desc": [
+   "یکی از افسانه‌ای‌ترین حرکات قدرتی در جهان؛ بالا کشیدن کل وزن بدن تنها با یک دست.",
+   "One of the most legendary feats of relative strength; pulling your entire bodyweight up using a single arm."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ],
+   [
+    "بازویی",
+    "Brachialis"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 2,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "میله را محکم با یک دست بگیر و دست آزاد را کنار بدن نگه دار.",
+    "Grip the bar firmly with one hand and keep your free arm at your side."
+   ],
+   [
+    "کتف دست درگیر را قفل کن، بدن را سفت نگه دار و با قدرت تمام خودت را بالا بکش تا چانه از میله رد شود.",
+    "Engage your working shoulder blade, brace your entire body, and pull forcefully until your chin clears the bar."
+   ],
+   [
+    "بسیار آهسته و با کنترل کامل به پایین برگرد.",
+    "Lower yourself slowly with full control to avoid elbow injury."
+   ]
+  ],
+  "tips": [
+   [
+    "هرگز در انتهای حرکت ناگهان رها نشو؛ فاز پایین آمدن باید کاملاً کنترل‌شده باشد تا تاندون آرنج آسیب نبیند.",
+    "Never drop rapidly into a dead hang; control the bottom extension to protect your elbow tendons."
+   ]
+  ],
+  "mistakes": [
+   [
+    "چرخیدن مداوم بدن به دور خود و استفاده از پرش اولیه",
+    "Spinning uncontrollably or relying on a jump off the floor"
+   ]
+  ]
+ },
+ {
+  "id": 30,
+  "desc": [
+   "بالا ماندن در اوج بارفیکس و جابه‌جا کردن افقی بدن بین دو دست مثل ماشین تایپ.",
+   "Holding the top of a pull-up while traversing horizontally from hand to hand like a typewriter."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ],
+   [
+    "ذوزنقه‌ای",
+    "Trapezius"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 6,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "میله را بازتر از عرض شانه بگیر و خودت را بالا بکش تا چانه بالای میله قرار بگیرد.",
+    "Take a wide grip on the bar and pull your chin above bar height."
+   ],
+   [
+    "بدون اینکه پایین بیایی، بدن را به صورت افقی به سمت دست راست ببر (دست چپ صاف می‌شود).",
+    "Staying at bar height, shift your body horizontally toward your right hand (straightening your left arm)."
+   ],
+   [
+    "سپس بدن را به سمت دست چپ ببر و به همین ترتیب ادامه بده.",
+    "Traverse smoothly across to your left hand and continue alternating."
+   ]
+  ],
+  "tips": [
+   [
+    "چانه را در تمام طول جابه‌جایی افقی بالای سطح میله نگه دار.",
+    "Keep your chin above the level of the bar throughout the entire horizontal travel."
+   ]
+  ],
+  "mistakes": [
+   [
+    "پایین افتادن ارتفاع سر در میانه مسیر",
+    "Dropping below the bar line while transitioning from side to side"
+   ]
+  ]
+ },
+ {
+  "id": 31,
+  "desc": [
+   "کشیدن بدن با سرعت انفجاری به طوری که میله تا سینه یا شکم پایین بیاید؛ پیش‌نیاز اصلی ماسل‌آپ.",
+   "Pulling explosively so the bar reaches your chest or lower ribs; the primary prerequisite for the muscle-up."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "پشت‌بازو (سر دراز)",
+    "Triceps (Long Head)"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 4,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "میله را محکم بگیر، کتف‌ها را منقبض کن و با حداکثر سرعت ممکن خودت را به سمت بالا پرتاب کن.",
+    "Grip the bar tightly, set your shoulder blades, and pull upward with maximum velocity."
+   ],
+   [
+    "میله را به سمت پایین سینه یا ناف بکش (نه به سمت چانه).",
+    "Drive the bar down toward your lower chest or navel rather than your chin."
+   ],
+   [
+    "با کنترل کامل به حالت آویزان برگرد و بین هر تکرار ۱ تا ۲ ثانیه مکث کن.",
+    "Lower back down with control and reset briefly between explosive reps."
+   ]
+  ],
+  "tips": [
+   [
+    "برای ارتفاع گرفتن بیشتر، میله را کمی به سمت جلو و پایین (مثل حرکت پول‌اور با سیم‌کش) بکش تا مسیر حرکت قوس‌دار شود.",
+    "Pull in a slight C-curve around the bar rather than straight up to clear space for your torso."
+   ]
+  ],
+  "mistakes": [
+   [
+    "نزدیک کردن بیش از حد صورت به میله که مانع بالا رفتن بدن می‌شود",
+    "Pulling your face straight into the bar, blocking upward momentum"
+   ]
+  ]
+ },
+ {
+  "id": 32,
+  "desc": [
+   "تمرین بخش کلیدی و تکنیکی ماسل‌آپ (چرخاندن مچ و آرنج روی میله کوتاه) با کمک پاها.",
+   "Practicing the critical technical phase of the muscle-up (rolling wrists and elbows over a low bar) with foot assistance."
+  ],
+  "muscles": [
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 7,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "یک میله بارفیکس کوتاه (در ارتفاع سینه یا شانه) را با گریپ کاذب (False Grip) بگیر و پاها را جلو بگذار.",
+    "Grip a low bar (chest/shoulder height) using a false grip with feet planted slightly forward."
+   ],
+   [
+    "خودت را بالا بکش و به محض رسیدن سینه به میله، سر و شانه‌ها را به سرعت به جلو خم کن و آرنج‌ها را به سمت سقف بچرخان.",
+    "Pull up and as your chest reaches the bar, aggressively throw your head/shoulders forward and roll elbows over the bar."
+   ],
+   [
+    "در حالت دیپ روی میله قرار بگیر و سپس به آرامی به عقب برگرد.",
+    "Finish in the bottom dip position on top of the bar, then reverse smoothly."
+   ]
+  ],
+  "tips": [
+   [
+    "تصور کن می‌خواهی روی میله شیرجه بزنی و دراز بکشی (Fast sit-up over the bar).",
+    "Think of performing a fast sit-up over the bar to smoothly transition your center of gravity."
+   ]
+  ],
+  "mistakes": [
+   [
+    "بالا آوردن یک آرنج زودتر از آرنج دیگر (چیکن وینگ) که به شانه آسیب می‌زند",
+    "Flaring one elbow over before the other (\"chicken winging\"), risking shoulder injury"
+   ]
+  ]
+ },
+ {
+  "id": 33,
+  "desc": [
+   "حرکت نمادین کلیستنیکس؛ ترکیب یک بارفیکس انفجاری، گذار روی میله و دیپ تا رسیدن به بالای میله.",
+   "The iconic calisthenics skill; combining an explosive pull-up, transition, and straight-bar dip to rise above the bar."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 4,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "از میله آویزان شو، بدن را کمی به جلو تاب بده (Hollow) و هنگام برگشت به عقب، با تمام قدرت خودت را به سمت میله بکش.",
+    "Hang from the bar, initiate a slight hollow swing forward, and pull explosively as you swing back."
+   ],
+   [
+    "وقتی سینه از میله بالاتر رفت، مچ‌ها و شانه‌ها را به سرعت روی میله بچرخان.",
+    "Once your chest clears the bar, quickly roll your wrists and shoulders over the bar into a dip."
+   ],
+   [
+    "با فشار دست‌ها (دیپ) آرنج‌ها را صاف کن و بالای میله بایست.",
+    "Press down forcefully to lock out your arms above the bar."
+   ]
+  ],
+  "tips": [
+   [
+    "قبل از تلاش برای ماسل‌آپ، باید بتوانی حداقل ۱۰ بارفیکس تمیز و ۱۵ دیپ پارالل بزنی.",
+    "Build a base of at least 10 strict pull-ups and 15 parallel dips before training bar muscle-ups."
+   ]
+  ],
+  "mistakes": [
+   [
+    "تلاش برای بالا کشیدن بدن با یک دست زودتر از دست دیگر",
+    "Chicken-winging one arm over the bar instead of transitioning symmetrically"
+   ]
+  ]
+ },
+ {
+  "id": 34,
+  "desc": [
+   "اجرای ماسل‌آپ روی حلقه‌های ژیمناستیک با استفاده از گریپ کاذب؛ نیازمند ثبات بالای مفاصل شانه و مچ.",
+   "Performing a muscle-up on gymnastics rings using a false grip; requires high wrist and shoulder stability."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "عضلات تثبیت‌کننده کتف و ساعد",
+    "Scapular & Forearm Stabilizers"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 4,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "حلقه‌ها را با گریپ کاذب (False Grip - مچ روی حلقه) بگیر و آویزان شو.",
+    "Grip the rings with a deep False Grip (wrists resting over the rings) and hang straight."
+   ],
+   [
+    "حلقه‌ها را به سمت جناغ سینه بکش و به محض تماس، شانه‌ها را به جلو متمایل کن تا بین حلقه‌ها قرار بگیری.",
+    "Pull the rings tightly to your sternum, then lean your shoulders forward through the rings."
+   ],
+   [
+    "حلقه‌ها را به سمت پایین فشار بده تا دست‌ها کاملاً قفل شوند.",
+    "Press the rings down into a full lockout support position."
+   ]
+  ],
+  "tips": [
+   [
+    "حلقه‌ها را در تمام طول حرکت نزدیک به بدن نگه دار؛ دور شدن حلقه‌ها از بدن قدرت را از بین می‌برد.",
+    "Keep the rings glued close to your torso throughout the pull and transition."
+   ]
+  ],
+  "mistakes": [
+   [
+    "از دست دادن گریپ کاذب در میانه کشش",
+    "Losing the false grip mid-pull"
+   ],
+   [
+    "باز کردن حلقه‌ها به طرفین هنگام بالا کشیدن",
+    "Letting the rings drift wide apart during the transition"
+   ]
+  ]
+ },
+ {
+  "id": 36,
+  "desc": [
+   "تمرین خانگی هوشمندانه با گره زدن ملحفه بالای در؛ تقویت همزمان عضلات پشت و قدرت پنجه.",
+   "A clever home pulling exercise anchoring a bed sheet over a closed door; builds back strength and crushing grip."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "ذوزنقه‌ای",
+    "Trapezius"
+   ],
+   [
+    "رومبوید",
+    "Rhomboids"
+   ],
+   [
+    "ساعد و پنجه",
+    "Forearms & Grip"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 12,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "وسط یک ملحفه ضخیم را گره بزن و از بالای یک در محکم رد کن (طوری که گره پشت در قفل شود و در به سمت خودت باز نشود).",
+    "Tie a knot in the middle of a sturdy bed sheet and drape it over the top of a closed door (pulling against the door frame)."
+   ],
+   [
+    "دو سر ملحفه را بگیر، پاها را جلو بگذار و به عقب متمایل شو.",
+    "Hold both ends of the sheet, walk your feet forward, and lean back with a straight body."
+   ],
+   [
+    "سینه را به سمت دست‌ها بکش، کتف‌ها را منقبض کن و با کنترل برگرد.",
+    "Pull your chest toward your hands, squeeze your shoulder blades, and lower with control."
+   ]
+  ],
+  "tips": [
+   [
+    "همیشه طوری بایست که در به سمت بیرون (پشت به تو) باز شود تا کاملاً ایمن باشد.",
+    "Always position yourself on the side where the door pulls shut into its frame for safety."
+   ]
+  ],
+  "mistakes": [
+   [
+    "کشیدن در جهتی که در باز می‌شود (خطر باز شدن ناگهانی در)",
+    "Pulling in the direction the door opens, risking the door swinging open"
+   ]
+  ]
+ },
+ {
+  "id": 37,
+  "desc": [
+   "اجرای زیربغل افقی با یک دست؛ تمرین ضدچرخش فوق‌العاده برای پشت، بازو و عضلات مورب شکم.",
+   "Performing inverted rows with one arm; a phenomenal anti-rotation exercise for the back, biceps, and obliques."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "ذوزنقه‌ای",
+    "Trapezius"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ],
+   [
+    "مورب شکمی",
+    "Obliques"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 7,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "زیر یک میله کوتاه یا حلقه قرار بگیر و با یک دست میله را بگیر (پاها کمی بازتر برای تعادل).",
+    "Lie under a low bar or ring and grip it with one hand, setting feet slightly wider for stability."
+   ],
+   [
+    "بدن را کاملاً صاف و بدون چرخش نگه دار.",
+    "Keep your torso flat and square to the ceiling without twisting."
+   ],
+   [
+    "با یک دست سینه را تا نزدیک میله بالا بکش و با کنترل پایین بیا.",
+    "Pull your chest up toward your working hand, then lower down under control."
+   ]
+  ],
+  "tips": [
+   [
+    "دست آزاد را روی شکم یا پهلو بگذار و اجازه نده شانه آزاد به سمت زمین بیفتد.",
+    "Place your free hand on your torso and prevent your non-working shoulder from dropping down."
+   ]
+  ],
+  "mistakes": [
+   [
+    "چرخاندن تنه به یک طرف برای بالا کشیدن بدن",
+    "Twisting the torso open to cheat the pull"
+   ]
+  ]
+ },
+ {
+  "id": 38,
+  "desc": [
+   "بالا بردن پاها به سمت میله و چرخاندن کل بدن به دور میله بارفیکس تا رسیدن به حالت تکیه بالا.",
+   "Lifting the legs to the bar and rotating the entire body over the pull-up bar into a top support position."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 5,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "میله بارفیکس را بگیر و آرنج‌ها را کمی خم کن (بدن را به میله نزدیک نگه دار).",
+    "Grip the pull-up bar and bend your elbows slightly to keep your chest close to the bar."
+   ],
+   [
+    "پاها را به سمت میله بالا ببر و لگن را از روی میله رد کن.",
+    "Lift your legs upward and pass your hips over the bar."
+   ],
+   [
+    "با چرخاندن مچ‌ها به سمت جلو، سینه را بالا بیاور و با دست‌های صاف روی میله بایست.",
+    "Rotate your wrists forward and press up into a straight-arm support position on top of the bar."
+   ]
+  ],
+  "tips": [
+   [
+    "کلید این حرکت چسباندن لگن به میله است؛ اگر لگن از میله دور شود چرخش سخت می‌شود.",
+    "Keep your hips tucked close to the bar; drifting away makes rotating over much harder."
+   ]
+  ],
+  "mistakes": [
+   [
+    "صاف کردن آرنج‌ها هنگام بالا بردن پاها که بدن را از میله دور می‌کند",
+    "Straightening the arms while lifting the legs, pushing the body away from the bar"
+   ]
+  ]
+ },
+ {
+  "id": 40,
+  "desc": [
+   "ساده‌ترین نسخه زیربغل افقی؛ با خم کردن زانوها بخشی از وزن بدن توسط پاها تحمل می‌شود.",
+   "The easiest variation of the inverted row; bending the knees allows the legs to assist, making it ideal for beginners."
+  ],
+  "muscles": [
+   [
+    "ذوزنقه‌ای",
+    "Trapezius"
+   ],
+   [
+    "رومبوید",
+    "Rhomboids"
+   ],
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "جلوبازو",
+    "Biceps"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 14,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "زیر یک میله کوتاه قرار بگیر، زانوها را خم کن و کف پاها را صاف روی زمین بگذار.",
+    "Position yourself under a low bar with knees bent and feet flat on the floor."
+   ],
+   [
+    "باسن را بالا ببر تا از زانو تا سر در یک خط صاف قرار بگیرد.",
+    "Lift your hips so your torso and thighs form a straight tabletop line."
+   ],
+   [
+    "سینه را به سمت میله بالا بکش و با کنترل به پایین برگرد.",
+    "Pull your chest up to touch the bar, then lower with control."
+   ]
+  ],
+  "tips": [
+   [
+    "با هر بار قوی‌تر شدن، پاها را کمی جلوتر ببر تا زاویه بدن افقی‌تر شود.",
+    "As you get stronger, walk your feet further forward to gradually increase the load."
+   ]
+  ],
+  "mistakes": [
+   [
+    "فشار دادن بیش از حد پاها به زمین و تبدیل حرکت به پل باسن",
+    "Pushing too hard with the legs instead of pulling with the upper back"
+   ]
+  ]
+ },
+ {
+  "id": 42,
+  "desc": [
+   "پایین رفتن تا حداکثر عمق ممکن به طوری که باسن به پاشنه‌ها نزدیک شود؛ عالی برای سلامت مفاصل و عضله‌سازی کامل پا.",
+   "Squatting down to full depth until glutes near the calves; maximizes muscle recruitment and joint mobility."
+  ],
+  "muscles": [
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ],
+   [
+    "سرینی (باسن)",
+    "Glutes"
+   ],
+   [
+    "همسترینگ",
+    "Hamstrings"
+   ],
+   [
+    "نزدیک‌کننده ران",
+    "Adductors"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 14,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "پاها را به اندازه عرض شانه یا کمی بازتر قرار بده.",
+    "Stand with feet shoulder-width apart or slightly wider."
+   ],
+   [
+    "باسن را عقب بده و تا انتهای دامنه حرکتی (پایین‌تر از خط موازی زمین) پایین برو در حالی که پاشنه‌ها روی زمین‌اند.",
+    "Push hips back and descend all the way below parallel while keeping heels flat on the ground."
+   ],
+   [
+    "با فشار پاشنه‌ها به زمین و حفظ قوس طبیعی کمر به بالا برگرد.",
+    "Drive through your heels to stand back up while maintaining a neutral spine."
+   ]
+  ],
+  "tips": [
+   [
+    "در پایین‌ترین نقطه لگن را کاملاً رها نکن (Butt Wink شدید) و تنش عضلانی را حفظ کن.",
+    "Maintain core tension at the bottom to prevent excessive lower-back rounding (butt wink)."
+   ]
+  ],
+  "mistakes": [
+   [
+    "بلند شدن پاشنه‌ها از زمین به دلیل خشکی مچ پا",
+    "Lifting heels off the floor due to tight ankles"
+   ]
+  ]
+ },
+ {
+  "id": 43,
+  "desc": [
+   "اسکوات با فاصله زیاد بین پاها؛ تمرکز ویژه روی عضلات داخلی ران (خیاطه/نزدیک‌کننده) و باسن.",
+   "Wide-stance squat with toes turned out; places extra emphasis on the inner thighs (adductors) and glutes."
+  ],
+  "muscles": [
+   [
+    "نزدیک‌کننده‌های ران (داخل ران)",
+    "Adductors (Inner Thighs)"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ],
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 15,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "پاها را حدود ۱.۵ تا ۲ برابر عرض شانه باز کن و پنجه‌ها را ۴۵ درجه به بیرون بچرخان.",
+    "Stand with feet 1.5 to 2 times shoulder-width apart and toes pointed out at 45 degrees."
+   ],
+   [
+    "بالاتنه را عمودی نگه دار و باسن را مستقیماً به سمت زمین پایین بیاور.",
+    "Keep your torso upright and lower your hips straight down toward the floor."
+   ],
+   [
+    "زانوها را در راستای پنجه‌ها به بیرون فشار بده و با انقباض باسن و داخل ران بالا بیا.",
+    "Push knees outward over your toes and drive up squeezing glutes and inner thighs."
+   ]
+  ],
+  "tips": [
+   [
+    "برخلاف اسکوات معمولی، در اسکوات سومو بالاتنه باید تا حد امکان صاف و عمودی بماند.",
+    "Unlike standard squats, keep your torso as vertical as possible during sumo squats."
+   ]
+  ],
+  "mistakes": [
+   [
+    "متمایل شدن زانوها به سمت داخل",
+    "Allowing knees to collapse inward instead of tracking over the toes"
+   ]
+  ]
+ },
+ {
+  "id": 47,
+  "desc": [
+   "اسکات تک‌پا که در آن پای آزاد به سمت عقب خم می‌شود؛ تمرینی فوق‌العاده برای چهارسر ران و باسن.",
+   "A single-leg squat where the free leg bends behind you; phenomenal for quad strength, glutes, and knee stability."
+  ],
+  "muscles": [
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ],
+   [
+    "همسترینگ",
+    "Hamstrings"
+   ],
+   [
+    "عضلات تعادلی زانو و مچ",
+    "Knee & Ankle Stabilizers"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 7,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "روی یک پا بایست و پای دیگر را از زانو خم کن تا پاشنه پشت باسن قرار بگیرد.",
+    "Stand on one leg and bend your other knee so your foot hovers behind your glutes."
+   ],
+   [
+    "دست‌ها را برای تعادل به جلو بکش و باسن را به عقب و پایین ببر تا زانوی پای عقبی به آرامی زمین (یا یک بالشتک) را لمس کند.",
+    "Reach arms forward for counterbalance and squat down until your back knee lightly taps the floor (or a pad)."
+   ],
+   [
+    "بدون ضربه زدن پای عقبی به زمین، با قدرت پای جلویی به بالا برگرد.",
+    "Press through your front foot to stand back up without bouncing off the back knee."
+   ]
+  ],
+  "tips": [
+   [
+    "یک بالشتک یا حوله تا شده زیر محل فرود زانوی عقبی بگذار تا هم ارتفاع هدف مشخص شود و هم به زانو فشار نیاید.",
+    "Place a folded towel or pad under the back knee to serve as a target and protect the joint."
+   ]
+  ],
+  "mistakes": [
+   [
+    "کوبیدن زانوی عقبی به زمین و استفاده از ضربه برای بالا آمدن",
+    "Slamming the back knee onto the floor and bouncing back up"
+   ]
+  ]
+ },
+ {
+  "id": 48,
+  "desc": [
+   "حرکتی بی‌نظیر برای ایزوله کردن و کشش کامل عضله چهارسر ران بدون نیاز به هیچ دستگاهی.",
+   "An unmatched bodyweight exercise for isolating and stretching the quadriceps completely without gym machines."
+  ],
+  "muscles": [
+   [
+    "چهارسر ران (به ویژه راست رانی)",
+    "Quadriceps (especially Rectus Femoris)"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ],
+   [
+    "ساق پا",
+    "Calves"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 8,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "پاها را به اندازه عرض شانه بگذار (می‌توانی با یک دست برای تعادل به دیوار یا پایه تکیه کنی).",
+    "Stand shoulder-width apart (lightly holding a wall or pole with one hand for balance if needed)."
+   ],
+   [
+    "روی پنجه‌های پا بلند شو، لگن را به جلو قفل کن و بالاتنه و ران‌ها را در یک خط صاف به عقب متمایل کن در حالی که زانوها به جلو می‌روند.",
+    "Rise onto the balls of your feet, keep hips locked straight with your torso, and lean back as your knees travel forward."
+   ],
+   [
+    "تا جایی که زانوها به نزدیک زمین برسند پایین برو و با انقباض شدید چهارسر ران بالا برگرد.",
+    "Lower until your knees near the floor, then contract your quads hard to return upright."
+   ]
+  ],
+  "tips": [
+   [
+    "خط بدن از زانو تا سر باید کاملاً صاف بماند؛ باسن را عقب نده.",
+    "Maintain a straight line from knees to head; do not bend at the hips."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن لگن به عقب که فشار را از روی چهارسر برمی‌دارد",
+    "Hinged hips (sticking glutes out), which takes tension off the quads"
+   ]
+  ]
+ },
+ {
+  "id": 50,
+  "desc": [
+   "برداشتن قدم به عقب به جای جلو؛ ایمن‌ترین نوع لانج برای زانوها با درگیری عالی عضلات باسن و همسترینگ.",
+   "Stepping backward instead of forward; the most knee-friendly lunge variation with great glute and hamstring activation."
+  ],
+  "muscles": [
+   [
+    "سرینی (باسن)",
+    "Glutes"
+   ],
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ],
+   [
+    "همسترینگ",
+    "Hamstrings"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 12,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "صاف بایست و یک قدم کنترل‌شده به عقب بردار.",
+    "Stand tall and take a controlled step backward with one leg."
+   ],
+   [
+    "هر دو زانو را خم کن تا زاویه ۹۰ درجه بسازند (ساق پای جلویی عمود بر زمین بماند).",
+    "Bend both knees to 90 degrees, keeping your front shin vertical."
+   ],
+   [
+    "با فشار پاشنه پای جلویی به حالت شروع برگرد و پا را عوض کن.",
+    "Drive through your front heel to stand back up and alternate legs."
+   ]
+  ],
+  "tips": [
+   [
+    "وزن بدن را روی پای جلویی حفظ کن و با پای عقبی به زمین ضربه نزن.",
+    "Keep your weight centered over the front foot rather than pushing off the back toes."
+   ]
+  ],
+  "mistakes": [
+   [
+    "ضربه زدن زانوی عقبی به زمین",
+    "Dropping the back knee hard onto the floor"
+   ]
+  ]
+ },
+ {
+  "id": 51,
+  "desc": [
+   "حرکت در صفحه جانبی (فرونتال) برای تقویت عضلات داخل و خارج ران و افزایش انعطاف کشاله ران.",
+   "Training in the frontal plane to strengthen the inner/outer thighs and improve groin mobility."
+  ],
+  "muscles": [
+   [
+    "نزدیک‌کننده ران (داخل ران)",
+    "Adductors (Inner Thighs)"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ],
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ],
+   [
+    "همسترینگ",
+    "Hamstrings"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 10,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "صاف بایست و یک قدم بزرگ به سمت راست بردار (پنجه‌های هر دو پا رو به جلو).",
+    "Stand tall and take a wide step out to your right with both feet pointing straight ahead."
+   ],
+   [
+    "باسن را به عقب بده و زانوی راست را خم کن در حالی که پای چپ کاملاً صاف می‌ماند.",
+    "Push your hips back and bend your right knee while keeping your left leg completely straight."
+   ],
+   [
+    "با فشار پاشنه پای راست به حالت ایستاده برگرد و برای سمت چپ تکرار کن.",
+    "Push off your right heel to return to the center and repeat on the left side."
+   ]
+  ],
+  "tips": [
+   [
+    "کف پای صاف‌شده (پای مخالف) باید کاملاً روی زمین بماند و بلند نشود.",
+    "Keep the entire sole of your straight leg planted flat on the floor."
+   ]
+  ],
+  "mistakes": [
+   [
+    "جلو زدن زانو به جای عقب دادن باسن",
+    "Shifting the knee forward instead of sitting the hips back"
+   ],
+   [
+    "گرد کردن کمر به جلو",
+    "Rounding the upper back"
+   ]
+  ]
+ },
+ {
+  "id": 54,
+  "desc": [
+   "ایزوله‌سازی عمیق عضلات سرینی و همسترینگ برای افزایش قدرت لگن و رفع عدم تقارن عضلانی.",
+   "Deep isolation of the glutes and hamstrings to build hip extension strength and correct muscle imbalances."
+  ],
+  "muscles": [
+   [
+    "سرینی بزرگ (باسن)",
+    "Gluteus Maximus"
+   ],
+   [
+    "همسترینگ (پشت ران)",
+    "Hamstrings"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 12,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "به پشت دراز بکش، زانوها خم و کف پاها روی زمین؛ یک پا را صاف به سمت سقف یا در راستای ران دیگر بالا ببر.",
+    "Lie on your back with knees bent; extend one leg straight up or aligned with the opposite thigh."
+   ],
+   [
+    "با فشار پاشنه پای روی زمین، لگن را تا جایی بالا ببر که بدن از شانه تا زانو در یک خط صاف قرار بگیرد.",
+    "Drive through your grounded heel to lift your hips until your body forms a straight line from shoulders to knees."
+   ],
+   [
+    "۱ ثانیه باسن را منقبض نگه دار و به آرامی پایین بیا.",
+    "Squeeze your glute hard for 1 second at the top, then lower with control."
+   ]
+  ],
+  "tips": [
+   [
+    "در بالاترین نقطه به کمر قوس نده؛ حرکت را فقط با انقباض باسن متوقف کن.",
+    "Avoid hyperextending your lower back at the top; finish the lift with glute contraction."
+   ]
+  ],
+  "mistakes": [
+   [
+    "کج شدن لگن به یک سمت",
+    "Letting one side of the pelvis drop lower than the other"
+   ]
+  ]
+ },
+ {
+  "id": 55,
+  "desc": [
+   "آموزش الگوی لولای لگن (Hip Hinge) و کشش و تقویت همسترینگ و فیله کمر.",
+   "Teaches proper hip-hinge mechanics while stretching and strengthening the hamstrings and lower back."
+  ],
+  "muscles": [
+   [
+    "همسترینگ (پشت ران)",
+    "Hamstrings"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ],
+   [
+    "فیله کمر",
+    "Erector Spinae"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 15,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "پاها را به اندازه عرض شانه باز کن، دست‌ها را پشت سر بگذار و زانوها را خیلی کم خم کن.",
+    "Stand shoulder-width apart with hands behind your head and a slight micro-bend in your knees."
+   ],
+   [
+    "باسن را به سمت عقب هل بده و بالاتنه را با کمر کاملاً صاف تا موازی شدن با زمین خم کن.",
+    "Push your hips straight back, hinging your torso forward with a flat spine until nearly parallel to the floor."
+   ],
+   [
+    "با کشش در پشت ران و انقباض باسن به حالت ایستاده برگرد.",
+    "Drive your hips forward and squeeze your glutes to stand back up."
+   ]
+  ],
+  "tips": [
+   [
+    "تصور کن می‌خواهی با باسنت درِ پشت سرت را ببندی؛ حرکت از لگن است نه از کمر.",
+    "Imagine pushing a car door shut behind you with your glutes; hinge at the hips, not the waist."
+   ]
+  ],
+  "mistakes": [
+   [
+    "قوز کردن و گرد کردن ستون فقرات",
+    "Rounding the back instead of maintaining a rigid, flat spine"
+   ]
+  ]
+ },
+ {
+  "id": 57,
+  "desc": [
+   "تقویت عضله دوقلو ساق پا و افزایش پایداری مچ پا برای پرش‌ها و دویدن.",
+   "Strengthens the gastrocnemius calf muscle and builds ankle stability for jumping and running."
+  ],
+  "muscles": [
+   [
+    "دوقلو ساق پا",
+    "Gastrocnemius"
+   ],
+   [
+    "نعلی",
+    "Soleus"
+   ],
+   [
+    "عضلات تثبیت‌کننده مچ پا",
+    "Ankle Stabilizers"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 15,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "با پنجه یک پا روی لبه یک پله بایست (پاشنه در هوا باشد) و با یک دست دیوار را برای تعادل بگیر.",
+    "Stand on the ball of one foot on the edge of a step (heel hanging off) and hold a wall lightly for balance."
+   ],
+   [
+    "پاشنه را تا جای ممکن پایین بیاور تا کشش عمیقی در ساق حس کنی.",
+    "Lower your heel below step level to feel a deep stretch in your calf."
+   ],
+   [
+    "روی پنجه پا تا بالاترین نقطه ممکن بلند شو، ۱ ثانیه مکث کن و پایین بیا.",
+    "Press up onto your tiptoes as high as possible, pause for 1 second, and lower slowly."
+   ]
+  ],
+  "tips": [
+   [
+    "در بالا و پایین حرکت ۱ ثانیه کامل مکث کن تا از خاصیت ارتجاعی تاندون آشیل سوءاستفاده نشود.",
+    "Pause for a full second at both the top and bottom to eliminate Achilles tendon bounce."
+   ]
+  ],
+  "mistakes": [
+   [
+    "بالا و پایین پریدن سریع بدون دامنه حرکتی کامل",
+    "Bouncing rapidly through partial reps"
+   ]
+  ]
+ },
+ {
+  "id": 58,
+  "desc": [
+   "با خم شدن زانوها در حالت نشسته، تمرکز به عضله عمقی نعلی (Soleus) ساق پا منتقل می‌شود.",
+   "Bending the knees while seated shifts emphasis onto the deep soleus muscle of the lower calf."
+  ],
+  "muscles": [
+   [
+    "عضله نعلی (Soleus)",
+    "Soleus"
+   ],
+   [
+    "دوقلو ساق پا",
+    "Gastrocnemius"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 20,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "روی لبه صندلی بنشین و پنجه‌های پا را روی زمین (یا یک کتاب ضخیم) بگذار.",
+    "Sit on the edge of a chair with the balls of your feet on the floor (or elevated on a thick book)."
+   ],
+   [
+    "با دست‌ها یا قرار دادن یک کیف سنگین روی زانوها کمی فشار به پایین وارد کن.",
+    "Press down on your knees with your hands (or rest a weighted backpack on your thighs) for resistance."
+   ],
+   [
+    "پاشنه‌ها را تا حداکثر ممکن از زمین بلند کن، ۱ ثانیه منقبض نگه دار و پایین بیا.",
+    "Raise your heels as high as possible, squeeze for 1 second, and lower with control."
+   ]
+  ],
+  "tips": [
+   [
+    "تعداد تکرارهای بالا (۱۵ تا ۲۵ تکرار) برای عضله نعلی بیشترین بازدهی را دارد.",
+    "Higher repetitions (15-25 reps) work best for stimulating the slow-twitch soleus muscle."
+   ]
+  ],
+  "mistakes": [
+   [
+    "چرخاندن مچ پا به سمت بیرون روی انگشت کوچک",
+    "Rolling the ankles outward onto the pinky toes"
+   ]
+  ]
+ },
+ {
+  "id": 59,
+  "desc": [
+   "اضافه کردن یک پالس (نیمه‌بلند شدن) در پایین اسکوات برای افزایش شدید زمان تحت تنش و سوزش عضلانی.",
+   "Adding a half-rep pulse at the bottom of each squat to dramatically increase time under tension and muscular burn."
+  ],
+  "muscles": [
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ],
+   [
+    "همسترینگ",
+    "Hamstrings"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 11,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "به حالت اسکات کامل پایین برو.",
+    "Descend into a full squat until thighs are parallel or below."
+   ],
+   [
+    "فقط تا نیمه مسیر (زاویه ۴۵ درجه) بالا بیا و بلافاصله دوباره تا انتها پایین برو.",
+    "Rise only halfway up, then immediately sink back down to the bottom."
+   ],
+   [
+    "اکنون به طور کامل بایست (این مجموعه برابر با ۱ تکرار است).",
+    "Stand all the way back up to complete one full repetition."
+   ]
+  ],
+  "tips": [
+   [
+    "در تمام طول پالس پایینی، کمر را صاف و سینه را بالا نگه دار.",
+    "Keep your chest lifted and spine neutral during the bottom bounce/pulse."
+   ]
+  ],
+  "mistakes": [
+   [
+    "پرتاب کردن بدن به بالا با ضربه زانو",
+    "Jerking upward aggressively off the knee joints"
+   ]
+  ]
+ },
+ {
+  "id": 67,
+  "desc": [
+   "چرخاندن کنترل‌شده لگن به چپ و راست در حالت پلانک برای درگیری عمیق پهلوها و عضلات چرخشی شکم.",
+   "Controlled hip dips from side to side in a forearm plank to deeply target the obliques and rotational core."
+  ],
+  "muscles": [
+   [
+    "مورب شکمی (پهلو)",
+    "Obliques"
+   ],
+   [
+    "عرضی شکمی",
+    "Transverse Abdominis"
+   ],
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 20,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "در حالت پلانک ساعد قرار بگیر و پاها را جفت کن.",
+    "Start in a standard forearm plank with feet together."
+   ],
+   [
+    "لگن را به سمت راست بچرخان تا نزدیک زمین شود (بدون تماس).",
+    "Rotate your hips to the right, dipping your right hip close to the floor without touching."
+   ],
+   [
+    "به مرکز برگرد و لگن را به سمت چپ بچرخان.",
+    "Return through the center and dip your left hip toward the floor."
+   ]
+  ],
+  "tips": [
+   [
+    "بالاتنه و شانه‌ها باید ثابت بمانند؛ تمام چرخش فقط از کمر و لگن انجام شود.",
+    "Keep your shoulders and upper torso stationary; all rotation comes from the waist and hips."
+   ]
+  ],
+  "mistakes": [
+   [
+    "بالا رفتن باسن هنگام عبور از مرکز",
+    "Piking the hips up high when passing through the center"
+   ]
+  ]
+ },
+ {
+  "id": 68,
+  "desc": [
+   "ترکیب ثبات پلانک جانبی با چرخش قفسه سینه برای تقویت عضلات مورب و انعطاف ستون فقرات سینه‌ای.",
+   "Combines side plank stability with thoracic rotation to strengthen obliques and mobilize the upper spine."
+  ],
+  "muscles": [
+   [
+    "مورب شکمی",
+    "Obliques"
+   ],
+   [
+    "عرضی شکمی",
+    "Transverse Abdominis"
+   ],
+   [
+    "دندانه‌ای قدامی",
+    "Serratus Anterior"
+   ],
+   [
+    "شانه",
+    "Shoulders"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 10,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "در حالت پلانک جانبی روی ساعد قرار بگیر و دست آزاد را به سمت سقف دراز کن.",
+    "Hold a forearm side plank with your top arm extended straight toward the ceiling."
+   ],
+   [
+    "بالاتنه را بچرخان و دست آزاد را از زیر فضای خالی بین بدن و زمین رد کن.",
+    "Rotate your torso downward and reach your top arm underneath your torso (threading the needle)."
+   ],
+   [
+    "دوباره به حالت شروع برگرد و دست را به سمت سقف باز کن.",
+    "Unwind back to the starting side plank position."
+   ]
+  ],
+  "tips": [
+   [
+    "لگن را بالا نگه دار و اجازه نده هنگام چرخش به سمت زمین بیفتد.",
+    "Keep your hips lifted high and prevent them from sagging during the reach under."
+   ]
+  ],
+  "mistakes": [
+   [
+    "افتادن شانه تکیه‌گاه به سمت گوش",
+    "Collapsing into the supporting shoulder joint"
+   ]
+  ]
+ },
+ {
+  "id": 70,
+  "desc": [
+   "کشیدن زانو به سمت آرنج مخالف در حالت پلانک برای درگیری شدید عضلات مورب شکمی.",
+   "Driving each knee toward the opposite elbow in a high plank to intensely target the obliques."
+  ],
+  "muscles": [
+   [
+    "مورب شکمی",
+    "Obliques"
+   ],
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "خم‌کننده ران",
+    "Hip Flexors"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 30,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "در حالت بالای شنا (پلانک دست صاف) قرار بگیر.",
+    "Start in a high plank position with hands stacked under shoulders."
+   ],
+   [
+    "زانوی راست را به سمت آرنج چپ بکش و به عقب برگردان.",
+    "Drive your right knee diagonally across toward your left elbow, then return it back."
+   ],
+   [
+    "زانوی چپ را به سمت آرنج راست بکش و به صورت متناوب ادامه بده.",
+    "Drive your left knee toward your right elbow and continue alternating."
+   ]
+  ],
+  "tips": [
+   [
+    "اگر حرکت را کمی آهسته‌تر بزنی، انقباض پهلوها بسیار بیشتر حس می‌شود.",
+    "Slowing down the tempo slightly increases oblique contraction significantly."
+   ]
+  ],
+  "mistakes": [
+   [
+    "بالا بردن باسن و دور شدن شانه‌ها از خط مچ دست",
+    "Piking the hips up and letting shoulders drift backward"
+   ]
+  ]
+ },
+ {
+  "id": 72,
+  "desc": [
+   "یکی از بهترین حرکات دنیا برای ساخت زیرشکم و تقویت همزمان پنجه و کتف‌ها روی بارفیکس.",
+   "One of the best exercises for building lower-ab strength while conditioning grip and scapular stability on the bar."
+  ],
+  "muscles": [
+   [
+    "زیرشکم",
+    "Lower Abs"
+   ],
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "خم‌کننده ران",
+    "Hip Flexors"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 10,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "از میله بارفیکس آویزان شو و شانه‌ها را فعال (کمی پایین) نگه دار.",
+    "Hang from the pull-up bar with active shoulders (scapulae slightly depressed)."
+   ],
+   [
+    "پاهای کاملاً صاف و جفت را تا زاویه ۹۰ درجه (یا تا لمس میله) بالا بیاور.",
+    "Raise your straight, locked legs up to 90 degrees (or all the way to the bar)."
+   ],
+   [
+    "بسیار آهسته پاها را پایین ببر تا از تاب خوردن جلوگیری شود.",
+    "Lower your legs slowly with control to prevent swinging."
+   ]
+  ],
+  "tips": [
+   [
+    "در انتهای بالا آمدن، لگن را به سمت جلو بچرخان (تلت لگن) تا شکم واقعاً منقبض شود.",
+    "Curl your pelvis upward at the top of the raise so your abs do the work rather than just hip flexors."
+   ]
+  ],
+  "mistakes": [
+   [
+    "تاب دادن بدن به عقب و جلو برای پرتاب پاها به بالا",
+    "Swinging the torso back and forth to kick the legs up"
+   ]
+  ]
+ },
+ {
+  "id": 73,
+  "desc": [
+   "چرخاندن پاهای صاف از یک سمت میله به سمت دیگر؛ تمرین نهایی برای عضلات مورب و قدرت چرخشی کور.",
+   "Rotating straight legs from one side of the bar to the other; the ultimate drill for obliques and rotational core power."
+  ],
+  "muscles": [
+   [
+    "مورب شکمی",
+    "Obliques"
+   ],
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 7,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "از میله آویزان شو و پاهای صاف را بالا بیاور تا مچ پاها نزدیک میله قرار بگیرند.",
+    "Hang from the bar and raise your straight legs until your ankles are near bar level."
+   ],
+   [
+    "با انقباض زیربغل و شکم، پاها را به سمت راست پایین ببر (مثل برف‌پاک‌کن ماشین).",
+    "Engaging your lats and core, lower your legs smoothly to the right side like a windshield wiper."
+   ],
+   [
+    "از مرکز عبور کن و پاها را به سمت چپ ببر.",
+    "Sweep back up through the center and lower to the left side."
+   ]
+  ],
+  "tips": [
+   [
+    "آرنج‌ها را کمی خم نگه دار تا کنترل بهتری روی چرخش لگن داشته باشی.",
+    "Keep a slight bend in your elbows to help stabilize your torso during the rotation."
+   ]
+  ],
+  "mistakes": [
+   [
+    "پایین انداختن لگن از ارتفاع میله و رها کردن پاها",
+    "Letting the hips drop away from the bar and swinging uncontrollably"
+   ]
+  ]
+ },
+ {
+  "id": 74,
+  "desc": [
+   "نگه داشتن کل وزن بدن روی کف دست‌ها با پاهای صاف در زاویه ۹۰ درجه؛ حرکت پایه ژیمناستیک.",
+   "Supporting your entire bodyweight on your palms on the floor with straight legs held at 90 degrees; a foundational gymnastics hold."
+  ],
+  "muscles": [
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "خم‌کننده ران",
+    "Hip Flexors"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "دندانه‌ای قدامی",
+    "Serratus Anterior"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 15,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "روی زمین بنشین و کف دست‌ها را کنار ران‌ها روی زمین بگذار (انگشتان رو به جلو یا کمی به بیرون).",
+    "Sit on the floor with legs straight and place palms flat beside your thighs."
+   ],
+   [
+    "با فشار شدید دست‌ها به زمین و پایین دادن شانه‌ها، باسن و پاهای صاف را از زمین بلند کن.",
+    "Push hard through your palms, depressing your shoulders, to lift your hips and straight legs off the floor."
+   ],
+   [
+    "زانوها را قفل نگه دار و در همین وضعیت ثابت بمان.",
+    "Keep knees locked and hold the 90-degree L-shape isometrically."
+   ]
+  ],
+  "tips": [
+   [
+    "شانه‌ها را تا حد ممکن به سمت پایین فشار بده تا دست‌ها بلندتر شوند و باسن به زمین نخورد.",
+    "Actively depress your shoulders down away from your ears to maximize hip clearance off the floor."
+   ]
+  ],
+  "mistakes": [
+   [
+    "فرو رفتن سر بین شانه‌ها و خم کردن زانوها",
+    "Shrugging shoulders up toward the ears and bending the knees"
+   ]
+  ]
+ },
+ {
+  "id": 75,
+  "desc": [
+   "اجرای ال-سیت روی میله‌های پارالل یا پارالت؛ به دلیل ارتفاع بیشتر، از نظر مچ دست راحت‌تر از زمین است.",
+   "Performing the L-sit on parallel bars or parallettes; provides greater floor clearance and is easier on the wrists."
+  ],
+  "muscles": [
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "خم‌کننده ران",
+    "Hip Flexors"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 20,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "میله‌های پارالل را محکم بگیر و با بازوهای کاملاً قفل خودت را بالا نگه دار.",
+    "Grip the parallel bars firmly and support yourself with locked-out arms."
+   ],
+   [
+    "پاهای صاف و جفت را بالا بیاور تا موازی زمین شوند (زاویه ۹۰ درجه با بالاتنه).",
+    "Lift your straight, together legs until they are parallel to the floor (90-degree angle)."
+   ],
+   [
+    "شکم و چهارسر ران را سفت نگه دار و نفس بکش.",
+    "Keep abs and quads tightly contracted while breathing steadily."
+   ]
+  ],
+  "tips": [
+   [
+    "پنجه‌های پا را به سمت جلو بکش (Pointed Toes) تا تنش کل پا حفظ شود.",
+    "Point your toes forward to keep your entire lower body engaged and clean."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن آرنج‌ها یا پایین افتادن پاها زیر خط افقی",
+    "Bending the elbows or letting feet droop below horizontal"
+   ]
+  ]
+ },
+ {
+  "id": 80,
+  "desc": [
+   "تمرین ضدچرخش با کش ورزشی (یا تکیه به دیوار) برای تقویت لایه‌های عمقی شکم و ثبات ستون فقرات.",
+   "An anti-rotation core drill using a resistance band (or wall press) to build deep spinal stability."
+  ],
+  "muscles": [
+   [
+    "عرضی شکمی",
+    "Transverse Abdominis"
+   ],
+   [
+    "مورب شکمی",
+    "Obliques"
+   ],
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 25,
+   "unit": "sec",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "به پهلو کنار یک کش ورزشی متصل به پایه بایست و دسته کش را با هر دو دست جلوی سینه بگیر.",
+    "Stand sideways to an anchored resistance band and hold the band with both hands at chest center."
+   ],
+   [
+    "دست‌ها را کاملاً صاف به سمت جلو دراز کن تا کش سعی کند بدنت را به سمت پایه بچرخاند.",
+    "Press your hands straight out in front of you, resisting the band's pull to twist your torso."
+   ],
+   [
+    "با منقبض کردن شکم و باسن، در برابر چرخش مقاومت کن و دست‌ها را کاملاً ثابت نگه دار.",
+    "Brace your core and glutes tightly to hold your hands completely still in the center."
+   ]
+  ],
+  "tips": [
+   [
+    "اگر کش نداری، کنار دیوار بایست و با کف دست‌های جلوی سینه به دیوار فشار جانبی وارد کن.",
+    "No band? Stand sideways next to a wall and press your extended palms sideways into the wall."
+   ]
+  ],
+  "mistakes": [
+   [
+    "چرخاندن شانه‌ها یا لگن به سمت کش",
+    "Allowing shoulders or hips to twist toward the anchor point"
+   ]
+  ]
+ },
+ {
+  "id": 82,
+  "desc": [
+   "اولین حرکت تعادلی روی دست‌ها در کلیستنیکس و یوگا؛ برای یادگیری کنترل مرکز ثقل با انگشتان دست.",
+   "The very first hand-balancing skill in calisthenics and yoga; teaches center-of-gravity control through the fingertips."
+  ],
+  "muscles": [
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "شکم",
+    "Core"
+   ],
+   [
+    "مچ دست و ساعد",
+    "Wrists & Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 20,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "دست‌ها را به اندازه عرض شانه روی زمین بگذار و انگشتان را کاملاً باز کن.",
+    "Place hands shoulder-width apart on the floor with fingers spread wide."
+   ],
+   [
+    "آرنج‌ها را کمی خم کن و زانوها را پشت بازوها (نزدیک زیربغل) تکیه بده.",
+    "Slightly bend your elbows and rest your knees on the backs of your upper arms (near armpits)."
+   ],
+   [
+    "به آرامی وزن را به جلو متمایل کن تا پنجه‌های پا از زمین جدا شوند و روی دست‌ها تعادل بگیری.",
+    "Slowly lean forward until your feet lift off the floor and balance on your hands."
+   ]
+  ],
+  "tips": [
+   [
+    "به زمین جلوتر از دست‌ها نگاه کن، نه به زیر شکمت؛ نگاه کردن به عقب باعث افتادن می‌شود.",
+    "Look slightly forward on the floor ahead of your hands, not straight down between them."
+   ]
+  ],
+  "mistakes": [
+   [
+    "پریدن به جلو به جای متمایل شدن آرام و کنترل‌شده",
+    "Jumping into the balance instead of leaning forward gradually"
+   ]
+  ]
+ },
+ {
+  "id": 83,
+  "desc": [
+   "مشابه کرو استند اما زانوها به جای پشت بازو، در کنار بیرونی آرنج‌ها تکیه می‌کنند؛ بسیار پایدارتر برای مبتدی‌ها.",
+   "Similar to the crow stand, but knees rest against the outside of the elbows; offers a wider, more stable base for beginners."
+  ],
+  "muscles": [
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 20,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "چمباتمه بزن، دست‌ها را به اندازه عرض شانه روی زمین بگذار و آرنج‌ها را کمی به بیرون خم کن.",
+    "Squat down, place hands shoulder-width apart, and bend elbows slightly outward."
+   ],
+   [
+    "بخش داخلی زانوها را به بخش بیرونی آرنج‌ها بچسبان و فشار بده.",
+    "Press the insides of your knees against the outsides of your elbows/triceps."
+   ],
+   [
+    "وزن را به جلو ببر تا پاها از زمین بلند شوند و پاشنه‌ها را به باسن نزدیک کن.",
+    "Lean forward until your feet lift off the ground, pulling heels toward your glutes."
+   ]
+  ],
+  "tips": [
+   [
+    "اگر احساس کردی به جلو می‌افتی، با نوک انگشتان دست زمین را محکم فشار بده تا به عقب برگردی.",
+    "If you start tipping forward, press your fingertips hard into the floor to push back into balance."
+   ]
+  ],
+  "mistakes": [
+   [
+    "گرم نکردن مچ دست‌ها قبل از شروع تمرین",
+    "Skipping wrist warm-ups before practicing hand balances"
+   ]
+  ]
+ },
+ {
+  "id": 84,
+  "desc": [
+   "اولین مرحله رسمی در مسیر یادگیری پلانچ؛ نگه داشتن بدن معلق در هوا با زانوهای جمع‌شده و آرنج‌های صاف.",
+   "The first official progression toward the full planche; holding the body suspended with knees tucked and straight arms."
+  ],
+  "muscles": [
+   [
+    "سرشانه قدامی",
+    "Anterior Deltoids"
+   ],
+   [
+    "دوسر بازویی (جلوبازو)",
+    "Biceps"
+   ],
+   [
+    "دندانه‌ای قدامی",
+    "Serratus Anterior"
+   ],
+   [
+    "شکم",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 10,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "دست‌ها را روی زمین یا پارالت بگذار (انگشتان کمی به بیرون) و آرنج‌ها را کاملاً قفل کن.",
+    "Place hands on the floor or parallettes (fingers turned slightly out) and lock your elbows straight."
+   ],
+   [
+    "کتف‌ها را به جلو هل بده (Protraction) و شانه‌ها را به جلو متمایل کن.",
+    "Protract your shoulder blades (round upper back) and lean your shoulders forward."
+   ],
+   [
+    "زانوها را به سمت سینه جمع کن و کل بدن را از زمین جدا کن تا باسن هم‌سطح شانه‌ها قرار بگیرد.",
+    "Tuck your knees tightly to your chest and lift your entire body off the floor until hips align with shoulders."
+   ]
+  ],
+  "tips": [
+   [
+    "قفل بودن کامل آرنج‌ها و گرد کردن بالای کمر (پروترکشن کتف) غیرقابل مذاکره است.",
+    "Completely locked elbows and strong scapular protraction are non-negotiable."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن آرنج‌ها (که حرکت را تبدیل به ال-سیت خم یا فراگ استند می‌کند)",
+    "Bending the elbows, which turns it into a bent-arm balance instead of a planche"
+   ]
+  ]
+ },
+ {
+  "id": 85,
+  "desc": [
+   "باز کردن زاویه لگن و صاف کردن کمر در حالت پلانچ تاک؛ افزایش چشمگیر گشتاور روی سرشانه‌ها.",
+   "Opening the hip angle and flattening the back from a tuck planche; dramatically increases leverage on the shoulders."
+  ],
+  "muscles": [
+   [
+    "سرشانه قدامی",
+    "Anterior Deltoids"
+   ],
+   [
+    "دوسر بازویی",
+    "Biceps"
+   ],
+   [
+    "دندانه‌ای قدامی",
+    "Serratus Anterior"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ],
+   [
+    "فیله کمر",
+    "Lower Back"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 10,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "در حالت پلانچ تاک با بازوهای قفل قرار بگیر.",
+    "Start in a strict straight-arm tuck planche."
+   ],
+   [
+    "بدون اینکه کتف‌ها را رها کنی، باسن را به سمت عقب باز کن تا کمر کاملاً صاف و افقی شود و ران‌ها عمود بر زمین بمانند.",
+    "Maintaining scapular protraction, push your hips backward until your back is completely flat and thighs are vertical."
+   ],
+   [
+    "شانه‌ها را بیشتر به جلو متمایل کن تا تعادل حفظ شود.",
+    "Lean your shoulders further forward to counterbalance the extended hips."
+   ]
+  ],
+  "tips": [
+   [
+    "به محض عقب بردن لگن، باید شانه‌ها را هم بیشتر به جلو ببری تا مرکز ثقل بالای دست‌ها بماند.",
+    "As your hips extend backward, your shoulders must lean further forward to keep the center of mass over your hands."
+   ]
+  ],
+  "mistakes": [
+   [
+    "گود کردن کمر و رها کردن انقباض شکم",
+    "Sagging the lower back and losing hollow core tension"
+   ]
+  ]
+ },
+ {
+  "id": 86,
+  "desc": [
+   "نگه داشتن بدن به صورت افقی و معلق تنها با فشار پشت بازو و زیربغل روی زمین یا با گرفتن پایه.",
+   "Holding the body suspended horizontally off the floor using straight-arm lat and tricep depression."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "پشت‌بازو (سر دراز)",
+    "Triceps (Long Head)"
+   ],
+   [
+    "شکم",
+    "Core"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 10,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "به پشت دراز بکش و یک تکیه‌گاه محکم بالای سر را با دست‌های صاف بگیر (یا کف دست‌ها را کنار لگن روی زمین فشار بده).",
+    "Lie on your back and grip a sturdy anchor overhead with straight arms (or press palms into the floor beside your hips)."
+   ],
+   [
+    "کل بدن را از شانه تا پاشنه سفت کن و به صورت یک تخته صاف و افقی از زمین جدا کن.",
+    "Brace your entire body from shoulders to heels and lift off into a rigid horizontal plank parallel to the floor."
+   ],
+   [
+    "در این حالت معلق و موازی زمین ثابت بمان.",
+    "Hold the suspended position isometrically."
+   ]
+  ],
+  "tips": [
+   [
+    "باسن را کاملاً منقبض کن تا بدن به شکل یک خط مستقیم بماند و لگن پایین نیفتد.",
+    "Squeeze your glutes hard so your hips stay level with your shoulders and heels."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن لگن (حالت جک‌نایف) به جای صاف نگه داشتن بدن",
+    "Piking at the hips instead of keeping the body straight"
+   ]
+  ]
+ },
+ {
+  "id": 87,
+  "desc": [
+   "اولین مرحله رسمی فرانت لیور؛ نگه داشتن بالاتنه به صورت افقی زیر میله بارفیکس با زانوهای جمع‌شده.",
+   "The first official front lever progression; holding the torso horizontal beneath the bar with knees tucked."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "پشت‌بازو (سر دراز)",
+    "Triceps (Long Head)"
+   ],
+   [
+    "ذوزنقه‌ای",
+    "Trapezius"
+   ],
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 15,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "میله بارفیکس را به اندازه عرض شانه بگیر و آرنج‌ها را کاملاً صاف قفل کن.",
+    "Grip the pull-up bar shoulder-width apart with elbows locked completely straight."
+   ],
+   [
+    "کتف‌ها را به پایین و عقب بکش و با فشار میله به سمت پایین، بالاتنه را افقی (موازی زمین) بالا بیاور.",
+    "Depress and retract your shoulder blades, pushing down on the bar to lift your torso horizontal."
+   ],
+   [
+    "زانوها را به سینه جمع کن تا کمر و لگن در یک خط افقی قرار بگیرند.",
+    "Keep knees tucked to your chest so your back and hips are parallel to the floor."
+   ]
+  ],
+  "tips": [
+   [
+    "تصور کن می‌خواهی با دست‌های صاف یک حرکت پول‌اور (Pullover) روی میله بزنی.",
+    "Think of pushing the bar down toward your hips with straight arms (like a straight-arm lat pulldown)."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن آرنج‌ها برای بالا نگه داشتن بدن",
+    "Bending the elbows to cheat the leverage"
+   ]
+  ]
+ },
+ {
+  "id": 88,
+  "desc": [
+   "یکی از زیباترین و سخت‌ترین حرکات ایزومتریک در کلیستنیکس؛ معلق ماندن کل بدن به صورت کاملاً صاف و افقی زیر میله.",
+   "One of the most iconic static holds in calisthenics; suspending the entire body completely straight and horizontal under the bar."
+  ],
+  "muscles": [
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "پشت‌بازو (سر دراز)",
+    "Triceps (Long Head)"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ],
+   [
+    "ذوزنقه‌ای",
+    "Trapezius"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ],
+   [
+    "ساعد",
+    "Forearms"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 10,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "میله را محکم بگیر، بازوها را قفل کن و از حالت تاک یا معکوس به آرامی پاها را کاملاً صاف و جفت باز کن.",
+    "Grip the bar tightly with locked arms and smoothly extend your legs completely straight and together."
+   ],
+   [
+    "کل بدن را از شانه تا نوک پنجه پا در یک خط کاملاً افقی و موازی زمین نگه دار.",
+    "Hold your entire body in a rigid horizontal line from shoulders to pointed toes."
+   ],
+   [
+    "شکم، باسن و زیربغل را با حداکثر توان منقبض کن و ثابت بمان.",
+    "Brace your lats, core, and glutes at maximum tension and hold still."
+   ]
+  ],
+  "tips": [
+   [
+    "کتف‌ها را در حالت خنثی یا کمی جمع‌شده نگه دار و اجازه نده شانه‌ها به جلو گرد شوند.",
+    "Keep shoulder blades depressed and retracted; avoid letting your shoulders roll forward."
+   ]
+  ],
+  "mistakes": [
+   [
+    "پایین افتادن باسن (شکل موزی) یا خم کردن آرنج‌ها",
+    "Hip sagging below horizontal or bending the elbows"
+   ]
+  ]
+ },
+ {
+  "id": 89,
+  "desc": [
+   "قرار گرفتن بدن به صورت افقی و رو به زمین زیر میله با زانوهای جمع‌شده؛ تمرینی عالی برای تقویت تاندون‌های دوسر بازویی و شانه.",
+   "Holding the body horizontal facing the floor beneath the bar with tucked knees; great for conditioning bicep tendons and shoulders."
+  ],
+  "muscles": [
+   [
+    "دوسر بازویی (جلوبازو)",
+    "Biceps"
+   ],
+   [
+    "سرشانه قدامی",
+    "Anterior Deltoids"
+   ],
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "فیله کمر",
+    "Lower Back"
+   ],
+   [
+    "شکم",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 15,
+   "unit": "sec"
+  },
+  "steps": [
+   [
+    "از میله آویزان شو، پاها را از بین دو دست رد کن (Skin the Cat) تا پشت به زمین قرار بگیری.",
+    "Hang from the bar and pass your legs through your arms (Skin the Cat) until facing the floor."
+   ],
+   [
+    "آرنج‌ها را کاملاً صاف قفل کن، زانوها را به سینه جمع کن و بدن را تا خط افقی پایین بیاور.",
+    "Lock your elbows completely straight, keep knees tucked to your chest, and lower until your back is horizontal."
+   ],
+   [
+    "در حالت موازی با زمین مکث کن و سپس با کنترل به حالت اول برگرد.",
+    "Hold parallel to the floor, then pull back through to dismount safely."
+   ]
+  ],
+  "tips": [
+   [
+    "با کف دست رو به جلو (Pronated) شروع کن؛ گریپ مچ برعکس فشار بسیار سنگینی به تاندون جلو بازو وارد می‌کند.",
+    "Train with an overhand (pronated) grip first; supinated grip places extreme stress on the bicep tendons."
+   ]
+  ],
+  "mistakes": [
+   [
+    "پریدن ناگهانی به پایین هنگام خستگی (همیشه با کنترل از حرکت خارج شو)",
+    "Dropping abruptly off the bar when fatigued instead of dismounting under control"
+   ]
+  ]
+ },
+ {
+  "id": 90,
+  "desc": [
+   "حرکت معروف بروس لی؛ بالا و پایین بردن کل بدن به صورت کاملاً صاف در حالی که فقط شانه‌ها روی نیمکت قرار دارند.",
+   "Made famous by Bruce Lee; raising and lowering the entire straight body with only the upper back/shoulders resting on a bench."
+  ],
+  "muscles": [
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "عرضی شکمی",
+    "Transverse Abdominis"
+   ],
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 5,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "به پشت روی نیمکت یا زمین دراز بکش و لبه نیمکت (یا یک پایه محکم) را کنار سر یا شانه‌ها محکم بگیر.",
+    "Lie on a bench and firmly grip the sides of the bench behind your head/shoulders."
+   ],
+   [
+    "کل بدن را از شانه تا پنجه پا کاملاً صاف و سفت به سمت سقف عمود کن.",
+    "Lift your entire body vertically toward the ceiling so only your upper shoulders remain on the bench."
+   ],
+   [
+    "بسیار آهسته کل بدن را به صورت یک تخته صاف تا نزدیک زمین پایین ببر (بدون خم کردن لگن) و دوباره بالا بکش.",
+    "Slowly lower your rigid, straight body toward the bench without piking at the hips, then pull back up."
+   ]
+  ],
+  "tips": [
+   [
+    "وزن بدن باید فقط روی شانه‌ها و قسمت بالای کمر باشد، هرگز روی مهره‌های گردن فشار نینداز.",
+    "Pivot strictly on your upper shoulders/traps—never rest your weight on your neck."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن کمر و لگن هنگام پایین رفتن",
+    "Bending at the hips or arching the lower back during the descent"
+   ]
+  ]
+ },
+ {
+  "id": 91,
+  "desc": [
+   "نگه داشتن کل بدن به صورت افقی و عمود بر یک میله عمودی؛ نمایش بی‌نظیر قدرت هل دادن، کشیدن و عضلات پهلو.",
+   "Holding the entire body horizontal off a vertical pole; a breathtaking display of pushing, pulling, and oblique strength."
+  ],
+  "muscles": [
+   [
+    "مورب شکمی",
+    "Obliques"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "زیربغل",
+    "Lats"
+   ],
+   [
+    "پشت‌بازو",
+    "Triceps"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ]
+  ],
+  "rec": {
+   "sets": 4,
+   "amount": 10,
+   "unit": "sec",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "یک میله عمودی را با دست بالایی (کف دست رو به جلو/پایین) و دست پایینی (کف دست رو به بالا/عقب) محکم بگیر.",
+    "Grip a vertical pole with a wide hand placement (top hand pulling, bottom hand pushing)."
+   ],
+   [
+    "با دست پایینی میله را هل بده و با دست بالایی میله را بکش تا آرنج‌ها کاملاً قفل شوند.",
+    "Push forcefully with your bottom arm while pulling hard with your top arm, keeping both elbows locked."
+   ],
+   [
+    "بدن صاف و جفت را به صورت افقی و موازی زمین نگه دار.",
+    "Hold your straight, together legs horizontal and parallel to the ground."
+   ]
+  ],
+  "tips": [
+   [
+    "قانون طلایی پرچم انسانی: «دست پایین هل می‌دهد، دست بالا می‌کشد» و هر دو آرنج باید ۱۰۰٪ صاف باشند.",
+    "Golden rule of the human flag: \"Bottom arm pushes, top arm pulls,\" with both elbows 100% locked."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن دست پایینی که باعث افتادن سریع لگن می‌شود",
+    "Bending the bottom arm, which immediately collapses the leverage"
+   ]
+  ]
+ },
+ {
+  "id": 94,
+  "desc": [
+   "چرخش جانبی بدن روی دست‌ها در یک خط مستقیم؛ عالی برای هماهنگی عصب و عضله، چابکی و آمادگی برای بالانس.",
+   "A lateral rotation over the hands in a straight line; builds coordination, agility, and spatial awareness for handstands."
+  ],
+  "muscles": [
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ],
+   [
+    "مچ دست",
+    "Wrists"
+   ],
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 6,
+   "unit": "rep",
+   "perSide": true
+  },
+  "steps": [
+   [
+    "یک پا را جلو بگذار و دست‌ها را بالای سر بکش.",
+    "Start in a lunge with arms reached overhead."
+   ],
+   [
+    "دست جلو را روی زمین بگذار، بلافاصله دست دوم را در یک خط روی زمین بگذار و پاهای صاف را از بالای سر به صورت باز (Straddle) عبور بده.",
+    "Place your lead hand on the floor, followed by your second hand in a straight line, kicking straight legs overhead in a straddle."
+   ],
+   [
+    "یکی یکی روی پاها در یک خط صاف فرود بیا.",
+    "Land one foot at a time in a straight line facing the opposite direction."
+   ]
+  ],
+  "tips": [
+   [
+    "تصور کن روی یک خط باریک راه می‌روی؛ دست‌ها و پاها باید همگی روی همان خط فرود بیایند.",
+    "Imagine moving along a straight line on the floor; hands and feet should all land on that line."
+   ]
+  ],
+  "mistakes": [
+   [
+    "خم کردن زانوها و آرنج‌ها در هوا",
+    "Bending knees and elbows while inverted"
+   ]
+  ]
+ },
+ {
+  "id": 95,
+  "desc": [
+   "ترکیب انفجاری برپی کامل و پرش روی باکس برای به اوج رساندن توان قلبی-عروقی و قدرت کل بدن.",
+   "An explosive combination of a full burpee and a box jump to skyrocket cardiovascular conditioning and full-body power."
+  ],
+  "muscles": [
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ],
+   [
+    "سینه",
+    "Chest"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "ساق پا",
+    "Calves"
+   ],
+   [
+    "هسته مرکزی",
+    "Core"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 9,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "روبه‌روی یک جعبه یا پله محکم یک برپی کامل بزن (سینه زمین را لمس کند) و پاها را جمع کن.",
+    "Facing a sturdy plyo box, perform a full burpee (chest to floor) and snap your feet forward."
+   ],
+   [
+    "بلافاصله با تاب دادن دست‌ها با هر دو پا روی جعبه بپر و نرم فرود بیا.",
+    "Immediately swing your arms and jump with both feet onto the box, landing softly."
+   ],
+   [
+    "روی جعبه کاملاً صاف بایست، سپس با کنترل پایین بیا و تکرار بعدی را شروع کن.",
+    "Stand up tall on top of the box, step down safely, and repeat."
+   ]
+  ],
+  "tips": [
+   [
+    "برای حفظ سلامت تاندون آشیل، به جای پریدن به عقب از روی جعبه، با قدم برداشتن (Step down) پایین بیا.",
+    "Step down one foot at a time rather than jumping backward off the box to protect your Achilles tendons."
+   ]
+  ],
+  "mistakes": [
+   [
+    "فرود آمدن در حالت چمباتمه عمیق روی جعبه بسیار بلند",
+    "Jumping onto a box that is too high, forcing an unsafe deep squat landing"
+   ]
+  ]
+ },
+ {
+  "id": 96,
+  "desc": [
+   "اسکات پرشی همراه با چرخش ۱۸۰ درجه در هوا؛ تقویت توان انفجاری، تعادل و چابکی.",
+   "A jump squat combined with a 180-degree mid-air rotation; develops explosive power, balance, and agility."
+  ],
+  "muscles": [
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ],
+   [
+    "ساق پا",
+    "Calves"
+   ],
+   [
+    "مورب شکمی",
+    "Obliques"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 10,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "در حالت اسکات پایین برو.",
+    "Squat down until thighs are parallel to the floor."
+   ],
+   [
+    "با قدرت به سمت بالا بپر و در هوا بدن را ۱۸۰ درجه بچرخان تا رو به جهت مخالف شوی.",
+    "Explode upward and rotate your body 180 degrees in mid-air to face the opposite direction."
+   ],
+   [
+    "بسیار نرم در حالت اسکات فرود بیا و در تکرار بعدی به جهت مخالف بچرخ.",
+    "Land softly into a squat, then jump and rotate back the other way on the next rep."
+   ]
+  ],
+  "tips": [
+   [
+    "جهت چرخش را در هر تکرار عوض کن (یک بار چپ، یک بار راست) تا سرگیجه نگیری.",
+    "Alternate rotation directions on each rep (left, then right) to avoid getting dizzy."
+   ]
+  ],
+  "mistakes": [
+   [
+    "فرود آمدن با پاهای صاف و از دست دادن تعادل",
+    "Landing with locked knees and losing balance"
+   ]
+  ]
+ },
+ {
+  "id": 97,
+  "desc": [
+   "نسخه سریع‌تر و رزمی برپی (بدون نیاز به زدن شنا)؛ تمرکز بر سرعت واکنش، چابکی و استقامت کل بدن.",
+   "A fast-paced, combat-sports variation of the burpee (without the push-up); builds reaction speed, agility, and conditioning."
+  ],
+  "muscles": [
+   [
+    "هسته مرکزی",
+    "Core"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ],
+   [
+    "چهارسر ران",
+    "Quadriceps"
+   ],
+   [
+    "سرینی",
+    "Glutes"
+   ],
+   [
+    "خم‌کننده ران",
+    "Hip Flexors"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 14,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "بایست، سپس سریع دست‌ها را روی زمین بگذار و پاها را با یک پرش به عقب پرتاب کن (در حالت بالای شنا).",
+    "From standing, drop your hands to the floor and kick your feet straight back into a high plank."
+   ],
+   [
+    "لگن را کمی به سمت زمین پایین بیاور و سینه را بالا نگه دار (بدون اینکه سینه به زمین بخورد).",
+    "Drop your hips slightly toward the floor while keeping your chest up (do not touch chest to ground)."
+   ],
+   [
+    "بلافاصله پاها را به سمت دست‌ها جمع کن و بایست.",
+    "Immediately snap your feet back outside your hands and stand up quickly."
+   ]
+  ],
+  "tips": [
+   [
+    "پاها را هنگام برگشت بازتر از دست‌ها روی زمین بگذار تا بلافاصله برای ایستادن آماده باشی.",
+    "Jump your feet wide outside your hands on the return so you can stand up immediately."
+   ]
+  ],
+  "mistakes": [
+   [
+    "رها کردن ناگهانی لگن و ضربه زدن به گودی کمر",
+    "Letting the lower back hyperextend violently when dropping the hips"
+   ]
+  ]
+ },
+ {
+  "id": 98,
+  "desc": [
+   "اجرای فوق‌آهسته کوهنورد با مکث در اوج انقباض؛ از بین بردن کامل نیروی تکانه برای درگیری حداکثری شکم.",
+   "Ultra-slow mountain climbers with an isometric pause at the top; eliminates momentum for maximum abdominal contraction."
+  ],
+  "muscles": [
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "عرضی شکمی",
+    "Transverse Abdominis"
+   ],
+   [
+    "مورب شکمی",
+    "Obliques"
+   ],
+   [
+    "دندانه‌ای قدامی",
+    "Serratus Anterior"
+   ],
+   [
+    "سرشانه",
+    "Shoulders"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 12,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "در حالت بالای شنا قرار بگیر و کتف‌ها را به جلو هل بده.",
+    "Start in a high plank with shoulder blades protracted."
+   ],
+   [
+    "با شمارش ۳ ثانیه بسیار آهسته زانوی راست را به سمت آرنج یا سینه بکش و ۲ ثانیه در جلو مکث کن.",
+    "Take 3 slow seconds to pull your right knee toward your chest/elbow and hold for 2 seconds at the top."
+   ],
+   [
+    "به آرامی پا را برگردان و همین کار را با پای چپ انجام بده.",
+    "Return the foot slowly and repeat with the left leg."
+   ]
+  ],
+  "tips": [
+   [
+    "در طول ۲ ثانیه مکث، زانو را تا جای ممکن به آرنج یا سینه نزدیک کن و کمر را گرد کن (Hollow).",
+    "During the 2-second pause, pull your knee as close to your elbow/chest as possible with a slight hollow back."
+   ]
+  ],
+  "mistakes": [
+   [
+    "کشیدن پنجه پا روی زمین هنگام جلو آوردن پا",
+    "Dragging your toes along the floor instead of lifting the knee cleanly"
+   ]
+  ]
+ },
+ {
+  "id": 100,
+  "desc": [
+   "حرکت دادن کل بدن به جلو و عقب روی پنجه‌های پا در حالت پلانک؛ افزایش شدید اهرم فشار روی شکم و آمادگی برای پلانچ.",
+   "Rocking the entire body forward and backward on the toes in a plank; dramatically increases core leverage and builds planche lean strength."
+  ],
+  "muscles": [
+   [
+    "راست شکمی",
+    "Rectus Abdominis"
+   ],
+   [
+    "عرضی شکمی",
+    "Transverse Abdominis"
+   ],
+   [
+    "سرشانه قدامی",
+    "Anterior Deltoids"
+   ],
+   [
+    "دندانه‌ای قدامی",
+    "Serratus Anterior"
+   ]
+  ],
+  "rec": {
+   "sets": 3,
+   "amount": 14,
+   "unit": "rep"
+  },
+  "steps": [
+   [
+    "در حالت پلانک ساعد قرار بگیر و بدن را کاملاً صاف و منقبض نگه دار.",
+    "Assume a strict forearm plank with your body rigid and straight."
+   ],
+   [
+    "با فشار پنجه‌های پا، بدن را تا جایی که شانه‌ها از آرنج‌ها جلوتر بروند به سمت جلو سر بده.",
+    "Push through your toes to shift your entire body forward until your shoulders move past your elbows."
+   ],
+   [
+    "سپس بدن را به سمت عقب ببر تا پاشنه‌ها به عقب کشیده شوند و دوباره تکرار کن.",
+    "Pull back through your forearms to shift backward, extending through your heels, and repeat."
+   ]
+  ],
+  "tips": [
+   [
+    "ارتفاع لگن نباید در طول رفت و برگشت تغییر کند؛ فقط در یک خط افقی جلو و عقب برو.",
+    "Keep your hip height completely level; glide strictly horizontally without bobbing up and down."
+   ]
+  ],
+  "mistakes": [
+   [
+    "گود شدن کمر هنگام عقب رفتن بدن",
+    "Allowing the lower back to sag when sliding backward"
+   ]
+  ]
+ }
+]
