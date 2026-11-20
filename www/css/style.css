@@ -993,3 +993,49 @@ html.ob-open, html.rn-open { overflow: hidden; }
 .prof-sum { line-height: 1.9; }
 .plan-foot .btn { max-width: 100%; white-space: normal; text-align: center; }
 @media (max-width: 880px) { .main { padding-bottom: calc(150px + var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px))); } }
+
+/* ---- صفحهٔ پروفایل ---- */
+.pf-wrap { display: grid; gap: 16px; max-width: 760px; }
+.pf-wrap .stats { margin-bottom: 0; }
+.pf-stats .stat b { font-size: calc(32px * var(--fs, 1)); }
+.pf-head { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.pf-av { width: 64px; height: 64px; border-radius: 20px; flex: none; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); font-weight: 900; font-size: calc(28px * var(--fs, 1)); }
+.pf-av .ico { width: 30px; height: 30px; }
+.pf-id { min-width: 0; display: grid; gap: 2px; }
+.pf-id h2 { font-weight: 900; font-size: calc(24px * var(--fs, 1)); overflow-wrap: anywhere; }
+.pf-id p { color: var(--muted); font-weight: 300; }
+.pf-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.pf-skill { display: inline-flex; align-items: center; border-radius: 16px; background: var(--surface-2); border: 1px solid var(--line); max-width: 100%; }
+.pf-sk-main, .pf-rec-main { display: flex; align-items: center; gap: 10px; min-width: 0; text-align: start; padding: 8px 12px; color: inherit; background: none; border: 0; font: inherit; cursor: pointer; }
+.pf-sk-main > span, .pf-rn { display: grid; min-width: 0; line-height: 1.5; }
+.pf-sk-main b, .pf-rn b { font-weight: 700; overflow-wrap: anywhere; }
+.pf-sk-main small, .pf-rn small { color: var(--muted); font-weight: 300; font-size: calc(12.5px * var(--fs, 1)); }
+.pf-x { width: 40px; min-height: 40px; display: grid; place-items: center; color: var(--faint); background: none; border: 0; cursor: pointer; flex: none; }
+.pf-x .ico { width: 16px; height: 16px; }
+.pf-recs { list-style: none; display: grid; gap: 8px; padding: 0; margin: 0; }
+.pf-recs li { display: flex; align-items: center; border-radius: 16px; background: var(--surface-2); border: 1px solid var(--line); }
+.pf-rec-main { flex: 1; }
+.pf-rn { flex: 1; }
+.pf-rec-main em { font-style: normal; font-weight: 900; font-size: calc(20px * var(--fs, 1)); color: var(--accent); white-space: nowrap; }
+.pf-rec-main em small { font-size: calc(12px * var(--fs, 1)); color: var(--muted); font-weight: 400; }
+.pf-skill .ico, .pf-recs .ico:not(.pf-x .ico) { flex: none; }
+.rc-mv { display: flex; align-items: center; gap: 10px; }
+.pick-list { display: grid; gap: 6px; margin-top: 8px; max-height: 46vh; overflow: auto; }
+
+/* ---- حرکات «تا ناتوانی»: کرونومتر و شمارندهٔ تکرار ---- */
+.rn-sw { display: grid; gap: 8px; justify-items: center; text-align: center; }
+.rn-sw b { font-weight: 900; font-size: calc(76px * var(--fs, 1)); line-height: 1.1; font-variant-numeric: tabular-nums; direction: ltr; }
+.rn-sw small { color: var(--muted); font-weight: 300; line-height: 1.9; max-width: 28ch; }
+.rn-count { display: flex; align-items: center; justify-content: center; gap: 12px; }
+.rn-tap { min-width: 168px; min-height: 168px; border-radius: 50%; display: grid; place-content: center; gap: 4px; text-align: center; background: var(--accent-soft); color: var(--text); border: 2px solid var(--accent); cursor: pointer; font: inherit; touch-action: manipulation; }
+.rn-tap:active { transform: scale(.97); background: var(--accent); color: var(--accent-ink); }
+.rn-tap b { font-weight: 900; font-size: calc(64px * var(--fs, 1)); line-height: 1; }
+.rn-tap small { color: var(--muted); font-size: calc(12.5px * var(--fs, 1)); max-width: 11ch; margin-inline: auto; }
+.rn-minus { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; background: var(--surface-3); border: 1px solid var(--line); color: var(--text); cursor: pointer; }
+
+/* ---- خلاصهٔ پایان تمرین به تفکیک دسته ---- */
+.rn-cats { list-style: none; padding: 0; margin: 4px 0 0; display: grid; gap: 8px; width: 100%; max-width: 420px; }
+.rn-cats li { display: flex; align-items: center; gap: 10px; padding: 11px 14px; border-radius: 16px; background: var(--surface-2); border: 1px solid var(--line); text-align: start; }
+.rn-cats .dotc { width: 10px; height: 10px; border-radius: 50%; background: var(--c, var(--accent)); flex: none; }
+.rn-cats b { font-weight: 700; flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.rn-cats em { font-style: normal; font-weight: 900; color: var(--accent); white-space: nowrap; }

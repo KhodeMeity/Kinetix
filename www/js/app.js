@@ -63,10 +63,22 @@
     if (c.done && typeof c.done === 'object') Object.keys(c.done).filter(k => /^\d{8}$/.test(k)).sort().slice(-400).forEach(k => { o.done[k] = +c.done[k] || 0; });
     return o;
   }
-  function cleanUser(u) {
-    if (!u || typeof u !== 'object') return null;
+  /* پروفایل کاربر؛ نسخه‌های قدیمی (آزمون سطح) را به سطح/قد تبدیل می‌کند */
+  function cleanUser(u, old) {
     const n = (v, a, b) => { v = Math.round(+v); return v >= a && v <= b ? v : 0; };
-    return { name: String(u.name || '').trim().slice(0, 30), age: n(u.age, 5, 100), height: n(u.height, 100, 230), weight: n(u.weight, 25, 250), at: +u.at || 0 };
+    if ((!u || typeof u !== 'object') && old && [1, 2, 3].includes(+old.level)) u = { height: old.height, level: old.level, at: old.at };
+    if (!u || typeof u !== 'object') return null;
+    return { name: String(u.name || '').trim().slice(0, 30), age: n(u.age, 5, 100), height: n(u.height, 100, 230), weight: n(u.weight, 25, 250), level: [1, 2, 3].includes(+u.level) ? +u.level : 0, at: +u.at || 0 };
+  }
+  function cleanSkills(s) {
+    const o = {}; if (!s || typeof s !== 'object') return o;
+    Object.keys(s).slice(0, 300).forEach(id => { const v = s[id]; if (v && typeof v === 'object') o[id] = { at: +v.at || 0 }; });
+    return o;
+  }
+  function cleanRecords(r) {
+    const o = {}; if (!r || typeof r !== 'object') return o;
+    Object.keys(r).slice(0, 300).forEach(id => { const v = r[id]; if (v && +v.v > 0 && +v.v < 100000) o[id] = { v: +v.v, u: v.u === 'sec' ? 'sec' : 'rep', at: +v.at || 0 }; });
+    return o;
   }
   function normalize(d) {
     d = d && typeof d === 'object' ? d : {};
@@ -75,18 +87,19 @@
       lang: d.lang === 'en' || d.lang === 'fa' ? d.lang : (I18N.lang || 'fa'),
       customMoves: Array.isArray(d.customMoves) ? d.customMoves : [],
       notes: d.notes && typeof d.notes === 'object' ? d.notes : {},
-      plan: buildPlan(d.plan || DEFAULT_PLAN),
+      plan: buildPlan(d.plan),
       progress: { done: {}, sets: {}, cycle: 1, start: 0 },
       weeks: [],
       goals: (Array.isArray(d.goals) ? d.goals : []).map(g => ({ ...g, hist: Array.isArray(g.hist) ? g.hist : [] })),
-      profile: d.profile && typeof d.profile === 'object' ? d.profile : null,
       reminders: { on: !!(d.reminders && d.reminders.on), time: d.reminders && /^\d{2}:\d{2}$/.test(d.reminders.time) ? d.reminders.time : '18:00' },
       font: [1, 2, 3, 4].includes(+d.font) ? +d.font : 1,
       sound: d.sound !== false,
       vib: d.vib !== false,
       restSet: [15, 30, 45, 60, 90, 120].includes(+d.restSet) ? +d.restSet : 60,
       restMove: Math.min(600, Math.max(0, +d.restMove || 0)) || 180,
-      user: cleanUser(d.user),
+      user: cleanUser(d.user, d.profile),
+      skills: cleanSkills(d.skills),
+      records: cleanRecords(d.records),
       ch: cleanCh(d.ch),
       log: Array.isArray(d.log) ? d.log.filter(e => e && typeof e.t === 'number' && (e.k === 's' || e.k === 'd')) : []
     };
@@ -445,7 +458,7 @@
     </li>`;
   }
   function weekStripHTML() {
-    const tk = todayKey();
+    const tk = tdKey();
     return `${weekBarHTML()}<div class="week-strip" role="tablist">${DAYS.map(d => {
       const p = D.plan[d.key], done = !!D.progress.done[d.key];
       return `<button class="day-tab ${done ? 'done' : ''} ${p.rest ? 'rest' : ''}" role="tab" data-act="day-pick" data-k="${d.key}" aria-current="${S.day === d.key}" aria-selected="${S.day === d.key}">
@@ -459,7 +472,7 @@
     const pct = st.t ? Math.round(st.d / st.t * 100) : 0;
     return `<div class="day-panel">
       <div class="day-head">
-        <div class="who"><h2>${dName(d)}${k === todayKey() ? ` <span class="badge basic">${T('c.today')}</span>` : ''}</h2>
+        <div class="who"><h2>${dName(d)}${k === tdKey() ? ` <span class="badge basic">${T('c.today')}</span>` : ''}</h2>
           <input class="title-input" data-in="day-title" value="${esc(TS(p.title))}" placeholder="${T('p.day.title')}" maxlength="40" aria-label="${T('p.day.title.a')}"></div>
         ${p.rest || !p.items.length ? '' : `<button class="btn primary start-btn" data-act="wk-start">${ico('i-play')}${T('ws.start')}</button>`}
         <button class="done-btn" data-act="day-done" aria-pressed="${done}"><span class="box">${ico('i-check')}</span>${T('p.done')}</button>
@@ -524,6 +537,15 @@
      و همان برنامه (با ارتقاهای انتخابی) برای هفتهٔ بعد ادامه پیدا می‌کند.
      ====================================================================== */
   const weekNo = () => D.progress.cycle || 1;
+  /* هفتهٔ جدید همیشه از شنبه شروع می‌شود؛ اگر وسط هفته ثبتش کنی، تا شنبه «در انتظار» است و هیچ روزی «امروز» نیست */
+  const pendingWeek = () => D.progress.start > Date.now();
+  const tdKey = () => (pendingWeek() ? null : todayKey());
+  function nextWeekStart() {
+    const d = new Date(); d.setHours(0, 0, 0, 0); const j = d.getDay();
+    const sat = (DAYS.find(x => x.key === 'sat') || {}).jsDay; if (j === sat) return Date.now();
+    d.setDate(d.getDate() + ((sat - j + 7) % 7)); return d.getTime();
+  }
+  const sinceTxt = () => T(pendingWeek() ? 'wk.starts' : 'wk.since', { d: esc(fmtDay(D.progress.start)) });
   const maxSaved = () => D.weeks.reduce((m, w) => Math.max(m, w.n), 0);
   const nextNo = () => Math.max(weekNo(), maxSaved()) + 1;
   const hasProgress = () => Object.values(D.progress.sets).some(v => v > 0) || Object.values(D.progress.done).some(Boolean);
@@ -544,7 +566,7 @@
   function archiveWeek() {
     const n = weekNo();
     D.weeks = D.weeks.filter(w => w.n !== n);
-    D.weeks.push({ n, start: D.progress.start, end: Date.now(), plan: clone(D.plan), done: { ...D.progress.done }, sets: { ...D.progress.sets }, level: (D.profile && D.profile.level) || 0 });
+    D.weeks.push({ n, start: D.progress.start, end: Date.now(), plan: clone(D.plan), done: { ...D.progress.done }, sets: { ...D.progress.sets }, level: (D.user && D.user.level) || 0 });
     D.weeks.sort((a, b) => a.n - b.n); if (D.weeks.length > 260) D.weeks.shift();
   }
   /* جایگزینی کل برنامه (برنامهٔ نمونه، آزمون سطح، استفاده از هفتهٔ قدیمی): هفتهٔ فعلی اگر چیزی ثبت شده بود آرشیو می‌شود */
@@ -685,15 +707,15 @@
       else if (dr.sets > it.sets) it.up = 'sets';
       Object.assign(it, { moveId: dr.moveId, sets: dr.sets, amount: dr.amount, unit: dr.unit, perSide: !!dr.perSide });
     }));
-    D.progress = { done: {}, sets: {}, cycle: n, start: Date.now() };
-    S.day = todayKey(); save(); closeModal(); render();
+    D.progress = { done: {}, sets: {}, cycle: n, start: nextWeekStart() };
+    S.day = tdKey() || DAYS[0].key; save(); closeModal(); render();
     toast(T('nw.done', { n: fa(n) }), () => { D.plan = prev.plan; D.progress = prev.progress; D.weeks = prev.weeks; save(); render(); });
   }
 
   /* --- نوار هفته در صفحهٔ برنامه --- */
   function weekBarHTML() {
     const st = curStat();
-    return `<div class="wk-bar"><div class="wk-id"><b>${T('wk.week', { n: fa(weekNo()) })}</b><small>${T('wk.since', { d: esc(fmtDay(D.progress.start)) })} · ${T('wk.prog', { d: fa(st.dn), t: fa(st.days) })}</small></div>
+    return `<div class="wk-bar"><div class="wk-id"><b>${T('wk.week', { n: fa(weekNo()) })}</b><small>${sinceTxt()} · ${T('wk.prog', { d: fa(st.dn), t: fa(st.days) })}</small></div>
       <div class="wk-acts"><button class="btn sm primary" data-act="wk-next">${ico('i-up')}${T('nw.cta')}</button><button class="btn sm" data-act="nav" data-v="weeks">${ico('i-layers')}${T('wk.history')}</button></div></div>`;
   }
 
@@ -711,7 +733,7 @@
   function viewWeeks() {
     const st = curStat(), list = [...D.weeks].sort((a, b) => b.n - a.n);
     return `<section class="wk-cur">
-        <div class="wk-cur-h"><div><span class="hm-k">${T('wv.current')}</span><h2>${T('wk.week', { n: fa(weekNo()) })}</h2><small>${T('wk.since', { d: esc(fmtDay(D.progress.start)) })}</small></div>
+        <div class="wk-cur-h"><div><span class="hm-k">${T('wv.current')}</span><h2>${T('wk.week', { n: fa(weekNo()) })}</h2><small>${sinceTxt()}</small></div>
           <button class="mini" data-act="wk-no" aria-label="${T('wv.editno')}" title="${T('wv.editno')}">${ico('i-edit')}</button></div>
         <div class="bar"><i style="width:${st.pct}%"></i></div>
         <div class="chips"><span class="tag">${T('wk.prog', { d: fa(st.dn), t: fa(st.days) })}</span><span class="tag">${T('wv.sets', { d: fa(st.sd), t: fa(st.st) })}</span>${st.up ? `<span class="tag up">${ico('i-up')}${T('wv.ups', { n: fa(st.up) })}</span>` : ''}</div>
@@ -759,7 +781,7 @@
   const CH_LVL = { 1: 'beginner', 2: 'intermediate', 3: 'advanced' };
   const CH_CLS = { core: 'core', push: 'push', pull: 'pull', legs: 'legs', mobility: 'skills', balance: 'skills', general: 'mine' };
   const dateSeed = (d = new Date()) => d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
-  const chLevel = () => (D.profile && [1, 2, 3].includes(+D.profile.level) ? +D.profile.level : 1);
+  const chLevel = () => (D.user && [1, 2, 3].includes(+D.user.level) ? +D.user.level : 1);
   const chPool = l => (window.CHALLENGES && CHALLENGES[CH_LVL[l]]) || [];
   const chTitle = c => (I18N.lang === 'en' ? c.te : c.t), chDesc = c => (I18N.lang === 'en' ? c.de : c.d);
   const chTypeName = t => (['push', 'pull', 'legs', 'core'].includes(t) ? catName(t) : T('ch.type.' + t));
@@ -786,7 +808,7 @@
       <div class="hm-row"><span class="hm-k">${T('ch.title')}</span><span class="ch-streak ${st ? 'on' : ''}">${ico('i-flame')}${st ? T('ch.streak', { n: fa(st) }) : T('ch.streak0')}</span></div>
       <div class="ch-badges"><span class="badge ch-type">${esc(chTypeName(c.type))}</span><span class="badge">${lvlName(t.lvl)}</span></div>
       <h3>${esc(chTitle(c))}</h3><p>${esc(chDesc(c))}</p>
-      ${D.profile && D.profile.level ? '' : `<small class="hm-sm ch-note">${T('ch.nolevel')} <button class="linkbtn" data-act="retake">${T('set.retake')}</button></small>`}
+      ${D.user && D.user.level ? '' : `<small class="hm-sm ch-note">${T('ch.nolevel')} <button class="linkbtn" data-act="nav" data-v="profile">${T('nav.profile')}</button></small>`}
       <div class="hm-act">${done
         ? `<span class="badge basic">${ico('i-check')}${T('ch.done')}</span><button class="btn sm ghost" data-act="ch-undo">${T('ch.undo')}</button>`
         : `<button class="btn primary" data-act="ch-done">${ico('i-check')}${T('ch.do')}</button><button class="btn" data-act="ch-roll" ${left > 0 ? '' : 'disabled'}>${ico('i-repeat')}${T('ch.roll')}</button>`}</div>
@@ -794,6 +816,10 @@
   }
 
   function homeToday() {
+    if (pendingWeek()) {
+      return `<section class="hm-card hm-today rest"><span class="hm-k">${T('wk.week', { n: fa(weekNo()) })}</span><h2>${T('hm.pending.t', { d: esc(fmtDay(D.progress.start)) })}</h2><p>${T('hm.pending.d')}</p>
+        <div class="hm-act"><button class="btn" data-act="home-day" data-k="${DAYS[0].key}">${T('hm.openplan')}</button><button class="btn primary" data-act="wk-early">${ico('i-play')}${T('hm.pending.early')}</button></div></section>`;
+    }
     const k = todayKey(), d = DAYS.find(x => x.key === k), p = D.plan[k], st = dayStats(k), done = !!D.progress.done[k];
     const items = p.items.map(it => ({ it, m: getMove(it.moveId) })).filter(x => x.m);
     const lab = `<span class="hm-k">${T('hm.today')} · ${dName(d)}</span>`;
@@ -814,7 +840,7 @@
         <button class="btn" data-act="home-day" data-k="${k}">${T('hm.openplan')}</button></div></section>`;
   }
   function homeWeek() {
-    const st = curStat(), tk = todayKey();
+    const st = curStat(), tk = tdKey();
     const ready = st.days > 0 && (st.dn >= st.days || Date.now() - D.progress.start >= 7 * 864e5);
     return `<section class="hm-card">
       <div class="hm-row"><h3>${T('wk.week', { n: fa(weekNo()) })}</h3><span class="tag">${T('wk.prog', { d: fa(st.dn), t: fa(st.days) })}</span></div>
@@ -839,7 +865,7 @@
       <div class="chips">${CATEGORIES.map(c => `<button class="chip c-${c.id}" data-act="home-cat" data-v="${c.id}"><span class="dotc"></span>${catName(c.id)} <small>${fa(cnt(c.id))}</small></button>`).join('')}</div></section>`;
   }
   function homeTiles() {
-    const t = [['moves', 'i-moves', fa(LIST.length)], ['explain', 'i-book', ''], ['add', 'i-plus', ''], ['goals', 'i-goal', ''], ['stats', 'i-stats', ''], ['weeks', 'i-layers', D.weeks.length ? fa(D.weeks.length) : '']];
+    const t = [['moves', 'i-moves', fa(LIST.length)], ['explain', 'i-book', ''], ['add', 'i-plus', ''], ['goals', 'i-goal', ''], ['profile', 'i-user', ''], ['stats', 'i-stats', ''], ['weeks', 'i-layers', D.weeks.length ? fa(D.weeks.length) : '']];
     return `<div class="hm-tiles">${t.map(([id, ic, c]) => `<button class="hm-tile" data-act="nav" data-v="${id}">${ico(ic)}<span>${T('nav.' + id)}</span>${c ? `<em>${c}</em>` : ''}</button>`).join('')}</div>`;
   }
   function homeRemind() {
@@ -853,18 +879,84 @@
   }
 
   /* ======================================================================
+     پروفایل: اطلاعات، سطح، مهارت‌ها و رکوردها
+     ====================================================================== */
+  const fmtDate = t => { try { return t ? new Intl.DateTimeFormat(I18N.locale, { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(t)) : ''; } catch (e) { return ''; } };
+  const recUnit = u => T(u === 'sec' ? 'unit.sec' : 'unit.rep');
+  /* رکورد هر حرکت = بیشتر از (بهترین ثبت‌شده در تمرین‌ها، رکورد دستی) */
+  function recordsList() {
+    const map = new Map();
+    try { Stats.prep(statsEnv()).c.perMove.forEach((x, id) => { if (x.best > 0 && getMove(id)) map.set(String(id), { id: String(id), v: x.best, u: x.bestU, at: x.bestT, auto: true }); }); } catch (e) {}
+    Object.keys(D.records).forEach(id => { const r = D.records[id], cur = map.get(id); if (getMove(id) && (!cur || r.v >= cur.v)) map.set(id, { id, v: r.v, u: r.u, at: r.at, auto: false }); });
+    return [...map.values()].sort((a, b) => b.at - a.at);
+  }
+  function viewProfile() {
+    const U = D.user || {}, bmi = U.height && U.weight ? (U.weight / Math.pow(U.height / 100, 2)).toFixed(1) : '';
+    let sets = 0, days = 0;
+    try { const P = Stats.prep(statsEnv()); sets = P.c.allSets.length; days = new Set(P.c.allSets.map(e => P.localNum(e.t))).size; } catch (e) {}
+    const meta = [U.age ? T('prof.age.v', { n: fa(U.age) }) : '', U.height ? T('prof.cm', { n: fa(U.height) }) : '', U.weight ? T('prof.kg', { n: fa(U.weight) }) : ''].filter(Boolean).join(' · ');
+    const skills = Object.keys(D.skills).map(id => ({ id, m: getMove(id), at: D.skills[id].at })).filter(x => x.m).sort((a, b) => b.at - a.at);
+    const recs = recordsList(), shown = S.profAll ? recs : recs.slice(0, 6);
+    const lv = U.level || 0;
+    return `<div class="pf-wrap">
+      <section class="hm-card pf-head-card"><div class="pf-head"><div class="pf-av" aria-hidden="true">${esc((U.name || '').trim().charAt(0).toUpperCase()) || ico('i-user')}</div>
+        <div class="pf-id"><h2>${esc(U.name || T('prof.noname'))}</h2>${meta ? `<p>${meta}</p>` : ''}${bmi ? `<p>${T('prof.bmi', { n: fa(bmi) })}</p>` : ''}</div></div>
+        <button class="btn block" data-act="prof-edit">${ico('i-edit')}${T('prof.edit')}</button>
+        <div class="field"><span class="lbl">${T('prof.level')}</span>
+          <div class="seg wrap" role="group">${[1, 2, 3].map(v => `<button type="button" data-act="prof-level" data-v="${v}" aria-pressed="${lv === v}">${T('level.' + v)}</button>`).join('')}</div>
+          <small class="hm-sm">${T('prof.level.d')}</small></div></section>
+      <div class="stats pf-stats"><div class="stat"><b>${fa(days)}</b><span>${T('prof.stat.days')}</span></div><div class="stat"><b>${fa(sets)}</b><span>${T('prof.stat.sets')}</span></div><div class="stat"><b>${fa(skills.length)}</b><span>${T('prof.stat.skills')}</span></div></div>
+      <section class="hm-card"><div class="hm-row"><h3>${ico('i-bolt')}${T('prof.skills')}</h3><button class="btn sm" data-act="skill-add">${ico('i-plus')}${T('prof.skills.add')}</button></div>
+        ${skills.length ? `<div class="pf-chips">${skills.map(({ id, m, at }) => `<span class="pf-skill c-${m.cat}"><button type="button" class="pf-sk-main" data-act="open-move" data-id="${m.id}">${moveIcon(m)}<span><b>${esc(mName(m))}</b>${at ? `<small>${T('prof.skills.since', { d: fmtDate(at) })}</small>` : ''}</span></button><button type="button" class="pf-x" data-act="skill-del" data-id="${id}" aria-label="${T('prof.skill.del')}: ${esc(mName(m))}">${ico('i-x')}</button></span>`).join('')}</div>`
+          : `<p class="hm-muted">${T('prof.skills.empty')}</p>`}</section>
+      <section class="hm-card"><div class="hm-row"><h3>${ico('i-trophy')}${T('prof.records')}</h3><button class="btn sm" data-act="rec-add">${ico('i-plus')}${T('prof.rec.add')}</button></div>
+        ${recs.length ? `<ul class="pf-recs">${shown.map(r => { const m = getMove(r.id); return `<li class="c-${m.cat}"><button type="button" class="pf-rec-main" data-act="open-move" data-id="${m.id}">${moveIcon(m)}<span class="pf-rn"><b>${esc(mName(m))}</b><small>${fmtDate(r.at)} · ${T(r.auto ? 'prof.rec.auto' : 'prof.rec.manual')}</small></span><em>${fa(r.v)} <small>${recUnit(r.u)}</small></em></button>${r.auto ? '' : `<button type="button" class="pf-x" data-act="rec-del" data-id="${r.id}" aria-label="${T('prof.rec.del')}: ${esc(mName(m))}">${ico('i-x')}</button>`}</li>`; }).join('')}</ul>
+          ${recs.length > 6 ? `<button class="btn sm ghost" data-act="prof-all">${T(S.profAll ? 'prof.rec.less' : 'prof.rec.all', { n: fa(recs.length) })}</button>` : ''}`
+          : `<p class="hm-muted">${T('prof.rec.empty')}</p>`}</section></div>`;
+  }
+  /* انتخاب مهارت: روی هر حرکت بزن تا اضافه یا حذف شود */
+  function skillModal() {
+    MS = { kind: 'skill', q: '', cat: 'skills' };
+    openModal({ title: T('prof.skills.pick'), body: `<p class="nw-hint">${T('prof.skills.pick.d')}</p>
+      <label class="search">${ico('i-search')}<input class="input" data-in="skq" placeholder="${T('p.pm.search')}" autocomplete="off"></label>
+      <div class="chips" id="skCats" role="group"></div><div class="pick-list" id="skList"></div>`, foot: `<button class="btn primary" data-act="close">${ico('i-check')}${T('c.done')}</button>` });
+    fillSkillList();
+  }
+  function fillSkillList() {
+    const el = $('#skList'); if (!el || !MS || MS.kind !== 'skill') return;
+    const q = norm(MS.q);
+    $('#skCats').innerHTML = [['skills', T('prof.skills')], ['all', T('c.all')]].map(([v, lb]) => `<button class="chip" data-act="skill-cat" data-v="${v}" aria-pressed="${MS.cat === v}">${lb}</button>`).join('');
+    const list = LIST.filter(m => (q || MS.cat === 'all' || m.cat === 'skills') && (!q || norm(hay(m)).includes(q)));
+    el.innerHTML = list.length ? list.slice(0, 120).map(m => liHTML(m, !!D.skills[m.id], 'skill-pick')).join('') : `<div class="notice" style="margin:6px">${T('c.none')}</div>`;
+  }
+  /* ثبت رکورد دستی: انتخاب حرکت، سپس عدد */
+  function recModal(sel) {
+    MS = { kind: 'rec', q: '', sel: sel || null };
+    if (!sel) {
+      openModal({ title: T('prof.rec.pick'), body: `<label class="search">${ico('i-search')}<input class="input" data-in="rcq" placeholder="${T('p.pm.search')}" autocomplete="off"></label><div class="pick-list" id="rcList"></div>`, foot: `<button class="btn ghost" data-act="close">${T('c.cancel')}</button>` });
+      fillRecList(); return;
+    }
+    const m = getMove(sel), u = m.iso ? 'sec' : 'rep', cur = D.records[sel];
+    openModal({ title: T('prof.rec.add'), body: `<p class="rc-mv c-${m.cat}">${moveIcon(m)}<b>${esc(mName(m))}</b></p>
+      <div class="field"><label for="rcVal">${T('prof.rec.value', { u: recUnit(u) })}</label><input class="input" id="rcVal" inputmode="numeric" autocomplete="off" maxlength="5" value="${cur ? fa(cur.v) : ''}" placeholder="${fa(10)}"></div>
+      <p class="ob-err" id="rcErr" role="alert" hidden>${T('prof.rec.err')}</p>`,
+      foot: `<button class="btn ghost" data-act="rec-back">${T('prof.rec.back')}</button><button class="btn primary" data-act="rec-save">${ico('i-check')}${T('prof.rec.save')}</button>` });
+    setTimeout(() => { const i = $('#rcVal'); i && i.focus(); }, 50);
+  }
+  function fillRecList() {
+    const el = $('#rcList'); if (!el || !MS || MS.kind !== 'rec') return;
+    const q = norm(MS.q), list = LIST.filter(m => !q || norm(hay(m)).includes(q));
+    el.innerHTML = list.length ? list.slice(0, 120).map(m => liHTML(m, false, 'rec-pick')).join('') : `<div class="notice" style="margin:6px">${T('c.none')}</div>`;
+  }
+
+  /* ======================================================================
      تنظیمات (زبان، تم، اندازهٔ متن، صدا، یادآور، سطح، داده‌ها)
      ====================================================================== */
   function viewSettings() {
-    const P = D.profile, can = !!(window.Notify && Notify.available()), th = D.theme || 'auto';
-    const lvlTxt = P && P.level ? T('set.level.cur', { lvl: T('level.' + P.level), n: fa(Math.round(P.total)) }) : P && P.skipped ? T('set.level.skipped') : T('set.level.none');
+    const can = !!(window.Notify && Notify.available()), th = D.theme || 'auto';
     const sg = (act, cur, opts) => `<div class="seg wrap" role="group">${opts.map(([v, lb]) => `<button type="button" data-act="${act}" data-v="${v}" aria-pressed="${String(cur) === String(v)}">${lb}</button>`).join('')}</div>`;
-    const U = D.user || {}, bmi = U.height && U.weight ? (U.weight / Math.pow(U.height / 100, 2)).toFixed(1) : '';
     const rl = v => (v >= 60 && v % 60 === 0 ? T('rest.m', { n: fa(v / 60) }) : T('rest.s', { n: fa(v) }));
     return `<div class="set-grid">
-      <section class="set-sec"><h4>${ico('i-activity')}${T('set.profile')}</h4>
-        ${U.name || U.age || U.height || U.weight ? `<p class="prof-sum"><b>${esc(U.name || '—')}</b>${[U.age ? T('prof.age.v', { n: fa(U.age) }) : '', U.height ? T('prof.cm', { n: fa(U.height) }) : '', U.weight ? T('prof.kg', { n: fa(U.weight) }) : ''].filter(Boolean).map(x => ' · ' + x).join('')}</p>${bmi ? `<p>${T('prof.bmi', { n: fa(bmi) })}</p>` : ''}` : `<p>${T('prof.none')}</p>`}
-        <button class="btn block" data-act="prof-edit">${ico('i-edit')}${T('prof.edit')}</button></section>
       <section class="set-sec"><h4>${ico('i-clock')}${T('set.rest')}</h4><p>${T('set.rest.d')}</p>
         <div class="field"><span class="lbl">${T('set.rest.set')}</span>${sg('set-rest-set', D.restSet, [30, 45, 60, 90, 120].map(v => [v, rl(v)]))}</div>
         <div class="field"><span class="lbl">${T('set.rest.move')}</span>${sg('set-rest-move', D.restMove, [60, 90, 120, 180, 240, 300].map(v => [v, rl(v)]))}</div>
@@ -882,14 +974,11 @@
         <p>${T('set.vib.d')}</p>
         <div class="set-row"><span>${T('set.sound')}</span><button type="button" class="switch" role="switch" aria-checked="${D.sound !== false}" data-act="set-sound" aria-label="${T('set.sound')}"></button></div>
         <p>${T('set.sound.d')}</p></section>
-      <section class="set-sec"><h4>${ico('i-goal')}${T('set.level')}</h4><p>${lvlTxt}</p>
-        <button class="btn block" data-act="retake">${ico('i-reset')}${T('set.retake')}</button></section>
       <section class="set-sec"><h4>${ico('i-db')}${T('set.data')}</h4><p>${T('b.text')}</p>
         <div style="display:grid;gap:10px">
           <button class="btn block" data-act="export">${ico('i-download')}${T('b.export')}</button>
           <button class="btn block" data-act="import-click">${ico('i-upload')}${T('b.import')}</button>
           <input type="file" id="importFile" accept="application/json,.json" hidden data-in="import">
-          <button class="btn block" data-act="plan-default">${ico('i-reset')}${T('b.default')}</button>
           <button class="btn block danger" data-act="reset-all">${ico('i-trash')}${T('b.reset')}</button></div></section>
       <p class="set-about">${T('set.about')}</p></div>`;
   }
@@ -1022,6 +1111,7 @@
     { id: 'weeks', icon: 'i-layers', sub: () => T('nav.sub.weeks') },
     { id: 'stats', icon: 'i-stats', sub: () => T('nav.sub.stats') },
     { id: 'add', icon: 'i-plus', sub: () => T('nav.sub.add') },
+    { id: 'profile', icon: 'i-user', sub: () => (D.user && D.user.name ? D.user.name : T('nav.sub.profile')) },
     { id: 'settings', icon: 'i-gear', sub: () => T('nav.sub.settings') }
   ];
   /* نوار پایین موبایل: ۳ گروه؛ بقیهٔ بخش‌ها داخل هر گروه با تب‌های بالای صفحه */
@@ -1030,7 +1120,7 @@
     { id: 'g-moves', key: 'moves', icon: 'i-moves', views: ['moves', 'explain', 'add'] },
     { id: 'g-plan', key: 'plan', icon: 'i-calendar', views: ['plan', 'weeks'] },
     { id: 'g-prog', key: 'prog', icon: 'i-stats', views: ['goals', 'stats'] },
-    { id: 'g-set', key: 'set', icon: 'i-gear', views: ['settings'] }
+    { id: 'g-set', key: 'prof', icon: 'i-user', views: ['profile', 'settings'] }
   ];
   const LAST = {};
   const VIEWS = {
@@ -1040,6 +1130,7 @@
     explain: { render: viewExplain, after() { fillExList(); fillDetail(); } },
     plan: { render: viewPlan },
     weeks: { render: viewWeeks },
+    profile: { render: viewProfile },
     settings: { render: viewSettings },
     stats: { render: () => window.Stats ? Stats.view(statsEnv()) : '' },
     add: { render: viewAdd, after() { fillTags(); refreshPreview(); fillMine(); } }
@@ -1079,18 +1170,36 @@
     'set-rest-move'(el) { D.restMove = +el.dataset.v; save(); markSeg(el); },
     'rest-apply'() { DAYS.forEach(d => D.plan[d.key].items.forEach(i => { i.rest = D.restSet; })); save(); toast(T('set.rest.applied', { n: fa(D.restSet) })); },
     'prof-edit'() { profileModal(false); },
-    'prof-skip'() { closeModal(); if (!D.user) { D.user = { name: '', age: 0, height: 0, weight: 0, at: Date.now() }; save(); } maybeOnboard(); },
+    'prof-level'(el) { if (!D.user) D.user = cleanUser({ at: Date.now() }); D.user.level = +el.dataset.v; save(); markSeg(el); },
+    'prof-all'() { S.profAll = !S.profAll; render(); },
+    'skill-add': skillModal,
+    'skill-cat'(el) { MS.cat = el.dataset.v; fillSkillList(); },
+    'skill-pick'(el) {
+      const id = el.dataset.id; if (D.skills[id]) delete D.skills[id]; else D.skills[id] = { at: Date.now() };
+      save(); fillSkillList(); if (S.view === 'profile') $('#view').innerHTML = viewProfile();
+    },
+    'skill-del'(el) { delete D.skills[el.dataset.id]; save(); render(); },
+    'rec-add'() { recModal(null); },
+    'rec-pick'(el) { recModal(el.dataset.id); },
+    'rec-back'() { recModal(null); },
+    'rec-save'() {
+      const m = getMove(MS && MS.sel); if (!m) return;
+      const n = parseInt(toEn(($('#rcVal') || {}).value || '').replace(/[^\d]/g, ''), 10);
+      if (!(n > 0 && n < 100000)) { const e = $('#rcErr'); if (e) e.hidden = false; return; }
+      D.records[m.id] = { v: n, u: m.iso ? 'sec' : 'rep', at: Date.now() }; save(); closeModal(); render(); toast(T('prof.rec.saved'));
+    },
+    'rec-del'(el) { const id = el.dataset.id, prev = D.records[id]; delete D.records[id]; save(); render(); toast(T('prof.rec.deleted'), () => { D.records[id] = prev; save(); render(); }); },
+    'prof-skip'() { closeModal(); if (!D.user) { D.user = cleanUser({ at: Date.now() }); save(); } },
     'prof-save'() {
       const g = id => ($('#' + id) || {}).value || '', num = id => parseInt(toEn(g(id)).replace(/[^\d]/g, ''), 10) || 0;
-      D.user = cleanUser({ name: g('pfName'), age: num('pfAge'), height: num('pfHeight'), weight: num('pfWeight'), at: Date.now() });
-      save(); closeModal(); render(); chrome(); maybeOnboard();
+      D.user = cleanUser({ name: g('pfName'), age: num('pfAge'), height: num('pfHeight'), weight: num('pfWeight'), level: (D.user && D.user.level) || 0, at: Date.now() });
+      save(); closeModal(); render(); chrome();
     },
     'set-theme'(el) { D.theme = el.dataset.v === 'auto' ? null : el.dataset.v; save(); applyTheme(); markSeg(el); },
     'set-lang'(el) { if (el.dataset.v !== I18N.lang) ACT.lang(); },
     'set-sound'(el) { D.sound = !(D.sound !== false); el.setAttribute('aria-checked', D.sound); save(); },
     lang() { D.lang = I18N.lang === 'fa' ? 'en' : 'fa'; I18N.set(D.lang); save(); closeModal(); applyLang(); S.draft = newDraft(); render(); },
     settings: () => go('settings'),
-    retake() { closeModal(); startOnboarding(); },
     'wk-start': startWorkout,
     'set-font'(el) { D.font = +el.dataset.v; save(); applyFont(); markSeg(el); },
     async 'remind-toggle'(el) {
@@ -1237,6 +1346,7 @@
     },
     'set-vib'(el) { D.vib = !(D.vib !== false); el.setAttribute('aria-checked', D.vib); save(); if (D.vib) haptic('tap'); },
     'start-today'() { S.day = todayKey(); startWorkout(); },
+    'wk-early'() { D.progress.start = Date.now(); save(); render(); },
     'home-day'(el) { S.day = el.dataset.k; go('plan'); },
     'home-add'() { planModal({ day: todayKey() }); },
     'home-cat'(el) { S.f.cat = el.dataset.v; go('moves'); },
@@ -1318,7 +1428,6 @@
       a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     },
     'import-click': () => $('#importFile').click(),
-    'plan-default'() { confirmDlg({ title: T('b.def.t'), text: T('b.def.d'), ok: T('b.def.ok'), cb() { replacePlan(buildPlan(DEFAULT_PLAN)); save(); render(); toast(T('b.def.done')); } }); },
     'reset-all'() { confirmDlg({ title: T('b.rst.t'), text: T('b.rst.d'), ok: T('b.rst.ok'), cb() { D = normalize({ theme: D.theme, lang: D.lang }); rebuild(); S.draft = newDraft(); save(); render(); toast(T('b.rst.done')); } }); },
     'confirm-ok'() { const cb = CONFIRM; CONFIRM = null; closeModal(); cb && cb(); }
   };
@@ -1369,6 +1478,8 @@
       case 'eq': S.eq = t.value; fillExList(); break;
       case 'pmq': MS.q = t.value; fillPick(); break;
       case 'nwq': MS.q = t.value; fillNwPick(); break;
+      case 'skq': MS.q = t.value; fillSkillList(); break;
+      case 'rcq': MS.q = t.value; fillRecList(); break;
       case 'num': {
         if (!c) break; const box = t.closest('.stepper');
         const n = parseInt(toEn(t.value).replace(/[^\d]/g, ''), 10);
@@ -1414,7 +1525,7 @@
   }
 
   /* ======================================================================
-     قابلیت‌های تکمیلی: اندازهٔ متن، اعلان‌ها، تنظیمات، Onboarding، شروع تمرین، اشتراک آمار
+     قابلیت‌های تکمیلی: اندازهٔ متن، اعلان‌ها، تنظیمات، پروفایل، شروع تمرین، اشتراک آمار
      ====================================================================== */
   const FONT_SCALE = [1, 1.15, 1.3, 1.5];
   function applyFont() { document.documentElement.style.setProperty('--fs', FONT_SCALE[(D.font || 1) - 1]); }
@@ -1455,38 +1566,31 @@
   }
 
   /* --- شروع تمرین --- */
-  function completeSetFromRunner(it, actual) {
+  function completeSetFromRunner(it, actual, unit) {
     const cur = D.progress.sets[it.id] || 0, nxt = Math.min(it.sets, cur + 1);
     D.progress.sets[it.id] = nxt; logSets(it, nxt, nxt);
-    if (it.unit === 'max' && actual != null) { const e = D.log[D.log.length - 1]; if (e && e.i === it.id) e.a = clamp(+actual || 0, 0, 999); }
+    if (it.unit === 'max' && actual != null) { const e = D.log[D.log.length - 1]; if (e && e.i === it.id) { e.a = clamp(+actual || 0, 0, 999); if (unit === 'sec') e.u = 'sec'; } }
     const was = !!D.progress.done[S.day]; let dayComplete = false;
     if (dayStats(S.day).complete && !was) { D.progress.done[S.day] = true; logDay(true); dayComplete = true; }
     save(); return { dayComplete };
   }
   function startWorkout() {
     const p = D.plan[S.day]; if (!p || p.rest || !window.Workout) return;
+    if (pendingWeek()) {
+      confirmDlg({ title: T('wk.early.t', { n: fa(weekNo()) }), text: T('wk.early.d', { d: fmtDay(D.progress.start) }), ok: T('hm.pending.early'), danger: false, cb() { D.progress.start = Date.now(); save(); render(); startWorkout(); } });
+      return;
+    }
     const items = dayItems(S.day).map(it => ({ it, m: getMove(it.moveId), done: clamp(D.progress.sets[it.id] || 0, 0, it.sets) })).filter(x => x.m && x.done < x.it.sets);
     if (!items.length) { toast(T('ws.empty')); return; }
     const day = DAYS.find(d => d.key === S.day);
     Workout.start({
-      T, num: fa, ico, esc, title: TS(p.title) || dName(day), items, moveIcon, mName, amountLabel,
+      T, num: fa, ico, esc, title: TS(p.title) || dName(day), items, moveIcon, mName, catName, amountLabel,
       completeSet: completeSetFromRunner, restMove: D.restMove, sound: D.sound, onSound(v) { D.sound = v; save(); }, buzz: haptic,
       notifyAt: (ms, t, b) => window.Notify && Notify.at(ms, t, b, notifyNames()), cancelNotify: () => window.Notify && Notify.cancelAt(),
       onClose(sum) { if (S.view === 'home') render(); else refreshPlan(); if (sum.complete) toast(T('p.alldone')); }
     });
   }
 
-  /* --- تعیین سطح --- */
-  function startOnboarding() { if (window.Onboard) Onboard.start({ T, num: fa, ico, esc, onDone: onboardDone, onLang: () => ACT.lang() }); }
-  function onboardDone(res, action) {
-    if (!res) { if (!D.profile) D.profile = { skipped: true, at: Date.now() }; save(); render(); return; }
-    const prev = { profile: D.profile, plan: clone(D.plan), progress: clone(D.progress), weeks: clone(D.weeks) };
-    D.profile = res;
-    if (action === 'apply') { replacePlan(buildPlan(LEVEL_PLANS[res.level])); S.day = todayKey(); }
-    save(); closeModal();
-    if (action === 'apply') go('plan'); else render();
-    toast(T(action === 'apply' ? 'ob.applied' : 'ob.kept', { lvl: T('level.' + res.level) }), () => { D.profile = prev.profile; D.plan = prev.plan; D.progress = prev.progress; D.weeks = prev.weeks; save(); render(); });
-  }
   function profileModal(first) {
     const U = D.user || {};
     const f = (id, lb, v, ph, mode) => `<div class="field"><label for="${id}">${lb}</label><input class="input" id="${id}" ${mode ? 'inputmode="numeric"' : ''} autocomplete="off" value="${v ? esc(mode ? fa(v) : v) : ''}" placeholder="${ph}" maxlength="${mode ? 3 : 30}"></div>`;
@@ -1498,10 +1602,8 @@
       foot: `<button class="btn ghost" data-act="${first ? 'prof-skip' : 'close'}">${T(first ? 'prof.skip' : 'c.cancel')}</button><button class="btn primary" data-act="prof-save">${ico('i-check')}${T('c.save')}</button>`
     });
   }
-  function maybeOnboard() {
-    if (!D.user && !D.profile && !D.log.length) { profileModal(true); return; }
-    if (!D.profile && !D.log.length) startOnboarding();
-  }
+  /* اولین اجرا: فقط نام (و اطلاعات اختیاری) پرسیده می‌شود */
+  function maybeOnboard() { if (!D.user && !D.log.length) profileModal(true); }
 
   function markSeg(el) { el.parentElement.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', b === el)); }
 
@@ -1536,8 +1638,7 @@
   try {
     const A = window.Capacitor && Capacitor.Plugins && Capacitor.Plugins.App;
     if (A && A.addListener) A.addListener('backButton', () => {
-      if (window.Onboard && Onboard.isOpen()) Onboard.back();
-      else if (window.Workout && Workout.isOpen()) Workout.back();
+      if (window.Workout && Workout.isOpen()) Workout.back();
       else if (modal.open) closeModal();
       else if (S.view === 'explain' && S.exOpen && innerWidth <= 880) ACT['ex-back']();
       else if (S.view !== 'home') go('home');
